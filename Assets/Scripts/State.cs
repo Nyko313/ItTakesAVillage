@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class State : ScriptableObject
 {
-    string stateName;
-    Texture image;
-    enum Type
+    public enum Category
     {
-        Type1,
-        Type2,
-        Type3
+        Face,
+        Color,
+        Behaviour
     }
-    Type type;
+
+    public string stateName;
+    public Texture stateImg;
+    public Texture gameOverImg;
+    public Category category;
 }

@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Action
+public class Action : ScriptableObject
 {
-    public string InputType;
-    public State State;
+    public string actionName;
+    public Texture2D icon;
 }

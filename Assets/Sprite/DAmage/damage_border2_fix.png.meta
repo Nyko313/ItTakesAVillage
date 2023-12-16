@@ -215,7 +215,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      damage_border2_fix_0: -4142929438644395296
+      damage_border2_fix_1: 3309153489970912460
+      damage_border2_fix_2: -3219268385867913742
+      damage_border2_fix_3: 5728273345360667922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

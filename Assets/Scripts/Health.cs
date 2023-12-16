@@ -20,6 +20,9 @@ public class Health : MonoBehaviour
     [SerializeField] List<Sprite> crackHeadSprites = new List<Sprite>();
     [SerializeField] List<Sprite> crackBodySprites = new List<Sprite>();
 
+    [SerializeField] GameObject Chicken;
+    [SerializeField] Sprite scaredChicken;
+
     Animator animator;
 
     //public event Action OutTime; 
@@ -42,7 +45,6 @@ public class Health : MonoBehaviour
         currentHealth -= 1;
 
         if (currentHealth <= 0) {
-
             death();
             return;
         } 
@@ -51,6 +53,7 @@ public class Health : MonoBehaviour
         if (currentHealth% stepHealt == 0 && currentStep < STEPS-1)
         {
             // animation
+            animator.SetTrigger("Damage");
             headSpriteR.sprite = crackHeadSprites[currentStep];
             bodySpriteR.sprite = crackBodySprites[currentStep];
 
@@ -60,23 +63,14 @@ public class Health : MonoBehaviour
 
     void death()
     {
+
+        // death animation
+        deathSprite.GetComponent<SpriteRenderer>().sortingOrder = 5;
+        Chicken.GetComponent<SpriteRenderer>().sprite = scaredChicken;
         animator.SetTrigger("Death");
         egg.SetActive(false);
-      
-        //SetTargetInvisible(egg);
         print("death");
-      // death animation
       // end screen
-    }
-
-
-    void SetTargetInvisible(Transform theTransform)
-    {
-        foreach (Transform aaa in theTransform)
-        {
-            aaa.GetComponent<Renderer>().enabled = false;
-            SetTargetInvisible(aaa);
-        }
     }
 
 }

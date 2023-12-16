@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: e459de8a395a4e4418e5d4e6988c2c59
+guid: 46d54c127030d0a45bc78a2a7eed00fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7603353364447143147
-    second: dead_ghost3_0
+      213: 1016803473936380970
+    second: damage_border-2_0
   - first:
-      213: -72562921704336530
-    second: dead_ghost3_1
+      213: -4882644233540121
+    second: damage_border-2_1
+  - first:
+      213: -4685866417084909348
+    second: damage_border-2_2
+  - first:
+      213: -5209366352869003220
+    second: damage_border-2_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -50,11 +56,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dead_ghost3_0
+      name: damage_border-2_0
       rect:
         serializedVersion: 2
-        x: 385
-        y: 773
-        width: 760
-        height: 1097
+        x: 0
+        y: 0
+        width: 1440
+        height: 2154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +136,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 51b5b5a36667b7690800000000000000
-      internalID: -7603353364447143147
+      spriteID: a247c5e4f596c1e00800000000000000
+      internalID: 1016803473936380970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dead_ghost3_1
+      name: damage_border-2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1435
-        height: 599
+        x: 392
+        y: 60
+        width: 7
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,8 +157,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e63d2fb38643efef0800000000000000
-      internalID: -72562921704336530
+      spriteID: 7ed25ecc247aeeff0800000000000000
+      internalID: -4882644233540121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damage_border-2_2
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 21
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd8b8b8025578feb0800000000000000
+      internalID: -4685866417084909348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: damage_border-2_3
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 62
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20fe5807ec94b7b0800000000000000
+      internalID: -5209366352869003220
       vertices: []
       indices: 
       edges: []
@@ -168,8 +216,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      dead_ghost3_0: -7603353364447143147
-      dead_ghost3_1: -72562921704336530
+      damage_border-2_0: 1016803473936380970
+      damage_border-2_1: -4882644233540121
+      damage_border-2_2: -4685866417084909348
+      damage_border-2_3: -5209366352869003220
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

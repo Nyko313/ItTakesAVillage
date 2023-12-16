@@ -6,13 +6,14 @@ using UnityEngine;
 
 public class InputHandler : MonoBehaviour
 {
+    [SerializeField] private GameHandler gameHandler;
 
     public enum SwipeDirection
     {
         None,
         Up,
         Down,
-        Rigth,
+        Right,
         Left,
     }
 
@@ -23,11 +24,28 @@ public class InputHandler : MonoBehaviour
         DoubleClicked,
     }
 
+    public enum EventState
+    {
+        NotCompleted,
+        Completed
+    }
+
     public struct Area
     {
         public float lastTimeClicked;
         public AreaState areaState;
+        public string position;
     }
+    
+    // Check Event
+    private bool[] eventCompleted;
+    private bool[] eventError;
+    private bool wrongAction;
+    private BabyEvent[] eventsToCheck;
+    private bool checkEvents = false;
+    private bool checkMovement;
+    private bool checkSwipe;
+    private bool checkTouch;
     
     // Swipe
     private Vector2 swipeDirectionDistance = Vector2.zero;
@@ -42,8 +60,11 @@ public class InputHandler : MonoBehaviour
     private void Start()
     {
         centerArea = new Area();
+        centerArea.position = "Center";
         bottomLeftArea = new Area();
+        bottomLeftArea.position = "Left";
         bottomRightArea = new Area();
+        bottomRightArea.position = "Right";
     }
 
     void Update()
@@ -55,7 +76,53 @@ public class InputHandler : MonoBehaviour
         UpdateAreaClickedTimer(ref bottomLeftArea);
         UpdateAreaClickedTimer(ref centerArea);
     }
+    
+    // ---------- Read Event Action ----------
 
+    public void StartCheckingEvents(BabyEvent[] events)
+    {
+        eventsToCheck = events;
+        eventCompleted = new bool[events.Length];
+
+        eventError = new bool[events.Length];
+        checkEvents = true;
+    }
+
+    private void UpdateEvent()
+    {
+        if (wrongAction == true && checkEvents == true)
+        {
+            gameHandler.WrongAction();
+            checkEvents = false;
+            return;
+        }
+
+        bool allEventCompleted = true;
+
+        foreach (var b in eventCompleted)
+        {
+            Debug.Log(b);
+            if (b == false)
+            {
+                allEventCompleted = false;
+            }
+        }
+        
+
+        checkEvents = !allEventCompleted;
+        
+        if(allEventCompleted) gameHandler.AllActionDone();
+    }
+
+    public void StopCheckEvents()
+    {
+        checkEvents = false;
+    }
+    
+    // ---------- Button Area ----------
+
+    
+    
     public void BottomLeftBtnPressed()
     {
         UpdateAreaState(ref bottomLeftArea);
@@ -63,11 +130,13 @@ public class InputHandler : MonoBehaviour
     
     public void BottomRightBtnPressed(){
         UpdateAreaState(ref bottomRightArea);
+        
     }
     
     public void CenterBtnPressed()
     {
         UpdateAreaState(ref centerArea);
+        
     }
 
     private void UpdateAreaState(ref Area area)
@@ -98,10 +167,47 @@ public class InputHandler : MonoBehaviour
         if (area.areaState != AreaState.None && Time.time - area.lastTimeClicked > doubleClickTime)
         {
             Debug.Log("Diomerdaccia");
+            
+            if(checkEvents) AreaPressedCheck(area);
+            
             area.areaState = AreaState.None;
         }
     }
+
+    private void AreaPressedCheck(Area area)
+    {
+        for (int i = 0; i < eventsToCheck.Length; i++)
+        {
+            if(eventCompleted[i] == true) continue;
+            if (eventsToCheck[i].action.actionName.Contains("Press"))
+            {
+                if (eventsToCheck[i].action.actionName.Contains(area.position))
+                {
+                    if ((eventsToCheck[i].action.actionName.Contains("Double") && area.areaState == AreaState.DoubleClicked) || (eventsToCheck[i].action.actionName.Contains("Single") && area.areaState == AreaState.Clicked))
+                    {
+                        eventCompleted[i] = true;
+                    }
+                    else
+                    {
+                        eventError[i] = true;
+                    }
+                }else
+                {
+                    eventError[i] = true;
+                }
+            }
+            else
+            {
+                eventError[i] = true;
+            }
+        }
+
+        CheckEventError();
+
+        UpdateEvent();
+    }
     
+    // ---------- Swipe ----------
     private void HandleSwipe()
     {
         if (Input.touchCount > 0)
@@ -126,7 +232,7 @@ public class InputHandler : MonoBehaviour
         else if (swipeDirectionDistance.x < -150)
         {
             
-            swipeDirection = SwipeDirection.Rigth;
+            swipeDirection = SwipeDirection.Right;
         }
         if (swipeDirectionDistance.y > 100)
         {
@@ -136,12 +242,65 @@ public class InputHandler : MonoBehaviour
         {
             swipeDirection = SwipeDirection.Up;
         }
-
-
+        
+        
+        if(checkEvents && swipeDirection != SwipeDirection.None) SwipeEventCheck();
     }
-    
-    
-    
+
+    private void SwipeEventCheck()
+    {
+        for (int i = 0; i < eventsToCheck.Length; i++)
+        {
+            if(eventCompleted[i] == true) continue;
+            if (eventsToCheck[i].action.actionName.Contains("Swipe"))
+            {
+                if (eventsToCheck[i].action.actionName.Contains("Right") && swipeDirection == SwipeDirection.Right)
+                {
+                    eventCompleted[i] = true;
+                }else if (eventsToCheck[i].action.actionName.Contains("Left")&& swipeDirection == SwipeDirection.Right)
+                {
+                    eventCompleted[i] = true;
+                }else if (eventsToCheck[i].action.actionName.Contains("Up")&& swipeDirection == SwipeDirection.Up)
+                {
+                    eventCompleted[i] = true;
+                }else if (eventsToCheck[i].action.actionName.Contains("Down")&& swipeDirection == SwipeDirection.Down)
+                {
+                    eventCompleted[i] = true;
+                }
+                else
+                {
+                    eventError[i] = true;
+                }
+
+                if (eventCompleted[i] == true && eventsToCheck[i].action.actionName.Contains("Double") &&
+                    Input.touchCount < 2)
+                {
+                    eventError[i] = true;
+                }
+            }
+            else
+            {
+                eventError[i] = true;
+            }
+        }
+
+        CheckEventError();
+        
+        UpdateEvent();  
+    }
+
+    private void CheckEventError()
+    {
+        wrongAction = true;
+        foreach (var b in eventError)
+        {
+            if (b == false)
+            {
+                wrongAction = false;
+            }
+        }
+    }
+
     private void  OnGUI()
     {
         int space = 55;

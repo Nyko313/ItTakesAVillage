@@ -42,10 +42,10 @@ public class EventsGenerator : MonoBehaviour
         List<Action> act = new();
         act.AddRange(action);
 
-        for (int i = 0; i < faceEvents.Length; i++)
+        /*for (int i = 0; i < faceEvents.Length; i++)
         {
             faceEvents.
-        }
+        }*/
 
         return new BabyEventLists(faceEvents, colorEvents, behaviourEvents);
     }

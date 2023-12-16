@@ -37,8 +37,6 @@ public class InputHandler : MonoBehaviour
         public string position;
     }
     
-    
-    
     // Check Event
     private bool[] eventCompleted;
     private bool[] eventError;
@@ -92,9 +90,10 @@ public class InputHandler : MonoBehaviour
 
     private void UpdateEvent()
     {
-        if (wrongAction == true)
+        if (wrongAction == true && checkEvents == true)
         {
             gameHandler.WrongAction();
+            checkEvents = false;
             return;
         }
 
@@ -110,7 +109,7 @@ public class InputHandler : MonoBehaviour
         }
         
 
-        checkEvents = allEventCompleted;
+        checkEvents = !allEventCompleted;
         
         if(allEventCompleted) gameHandler.AllActionDone();
     }
@@ -179,13 +178,13 @@ public class InputHandler : MonoBehaviour
     {
         for (int i = 0; i < eventsToCheck.Length; i++)
         {
+            if(eventCompleted[i] == true) continue;
             if (eventsToCheck[i].action.actionName.Contains("Press"))
             {
                 if (eventsToCheck[i].action.actionName.Contains(area.position))
                 {
                     if ((eventsToCheck[i].action.actionName.Contains("Double") && area.areaState == AreaState.DoubleClicked) || (eventsToCheck[i].action.actionName.Contains("Single") && area.areaState == AreaState.Clicked))
                     {
-                        Debug.Log("Double/single press correct ");
                         eventCompleted[i] = true;
                     }
                     else
@@ -244,13 +243,15 @@ public class InputHandler : MonoBehaviour
             swipeDirection = SwipeDirection.Up;
         }
         
-        if(false) SwipeEventCheck();
+        
+        if(checkEvents && swipeDirection != SwipeDirection.None) SwipeEventCheck();
     }
 
     private void SwipeEventCheck()
     {
         for (int i = 0; i < eventsToCheck.Length; i++)
         {
+            if(eventCompleted[i] == true) continue;
             if (eventsToCheck[i].action.actionName.Contains("Swipe"))
             {
                 if (eventsToCheck[i].action.actionName.Contains("Right") && swipeDirection == SwipeDirection.Right)
@@ -265,6 +266,10 @@ public class InputHandler : MonoBehaviour
                 }else if (eventsToCheck[i].action.actionName.Contains("Down")&& swipeDirection == SwipeDirection.Down)
                 {
                     eventCompleted[i] = true;
+                }
+                else
+                {
+                    eventError[i] = true;
                 }
 
                 if (eventCompleted[i] == true && eventsToCheck[i].action.actionName.Contains("Double") &&

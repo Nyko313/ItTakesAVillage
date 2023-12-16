@@ -21,13 +21,13 @@ public class GameHandler : MonoBehaviour
         colorEvents = eventLists.colorEvents;
         behaviourEvents = eventLists.behaviourEvents;
 
-        BabyEvent[] test = new[] { new BabyEvent(new Action("SinglePressLeft", null),null),new BabyEvent(new Action("SinglePressRight", null),null)  };
+        BabyEvent[] test = new[] { new BabyEvent(new Action("DoubleSwipeUp", null),null), new BabyEvent(new Action("SingleSwipeRight", null),null)};
         inputHandler.StartCheckingEvents(test);
     }
 
     private void Update()
     {
-        if (Time.time > 10f)
+        if (Time.time > 20f)
         {
             TimeFinished();
         }

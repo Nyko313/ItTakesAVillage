@@ -1,9 +1,9 @@
-﻿using UnityEngine;
-using System.Collections;
+using System;
+using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Action", menuName = "BabyEvent/Action")]
-public class Action : ScriptableObject
+[System.Serializable]
+public class Action
 {
     public string actionName;
-    public Texture2D icon;
+    public Texture2D texture;
 }

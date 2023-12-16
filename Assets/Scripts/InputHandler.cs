@@ -23,11 +23,28 @@ public class InputHandler : MonoBehaviour
         DoubleClicked,
     }
 
+    public enum EventState
+    {
+        NotCompleted,
+        Completed
+    }
+
     public struct Area
     {
         public float lastTimeClicked;
         public AreaState areaState;
     }
+    
+    private event ValueChanged
+    
+    // Check Event
+    private bool[] eventCompleted;
+    private bool error = false;
+    private BabyEvent[] eventsToCheck;
+    private bool checkEvents = false;
+    private bool checkMovement;
+    private bool checkSwipe;
+    private bool checkTouch;
     
     // Swipe
     private Vector2 swipeDirectionDistance = Vector2.zero;
@@ -55,7 +72,103 @@ public class InputHandler : MonoBehaviour
         UpdateAreaClickedTimer(ref bottomLeftArea);
         UpdateAreaClickedTimer(ref centerArea);
     }
+    
+    // ---------- Read Event Action ----------
 
+    public void StartCheckingEvents(BabyEvent[] events)
+    {
+        eventsToCheck = events;
+        eventCompleted = new bool[events.Length];
+    }
+
+    public void CheckEventsUpdate()
+    {
+        
+        
+        for(int i = 0; i < eventsToCheck.Length; i++)
+        {
+            if (swipeDirection != null)
+            {
+                if (eventsToCheck[i].action.actionName.Contains("Swipe"))
+                {
+                    if (eventsToCheck[i].action.actionName.Contains("Left") && swipeDirection == SwipeDirection.Left)
+                    {
+                        eventCompleted[i] = true;
+                    }else if (eventsToCheck[i].action.actionName.Contains("Right") && swipeDirection == SwipeDirection.Rigth)
+                    {
+                        eventCompleted[i] = true;
+                    }else if (eventsToCheck[i].action.actionName.Contains("Up") && swipeDirection == SwipeDirection.Up)
+                    {
+                        eventCompleted[i] = true;
+                    }else if (eventsToCheck[i].action.actionName.Contains("Down") && swipeDirection == SwipeDirection.Down)
+                    {
+                        eventCompleted[i] = true;
+                    }
+
+                    if (eventCompleted[i] == true && eventsToCheck[i].action.actionName.Contains("Double") &&
+                        Input.touchCount <= 1)
+                    {
+                        eventCompleted[i] = false;
+                    }
+                }
+                else
+                {
+                    error = true;
+                    return;
+                }
+            }
+
+            if (centerArea.areaState != AreaState.None && eventsToCheck[i].action.actionName.Contains("Press")&& eventsToCheck[i].action.actionName.Contains("Center"))
+            {
+                if (centerArea.areaState == AreaState.DoubleClicked &&
+                    eventsToCheck[i].action.actionName.Contains("Double"))
+                {
+                    eventCompleted[i] = true;
+                }
+            }
+            else
+            {
+                error = true;
+                return;
+            }
+            
+            if (bottomRightArea.areaState != AreaState.None && eventsToCheck[i].action.actionName.Contains("Press")&& eventsToCheck[i].action.actionName.Contains("Right"))
+            {
+                if (bottomRightArea.areaState == AreaState.DoubleClicked &&
+                    eventsToCheck[i].action.actionName.Contains("Double"))
+                {
+                    eventCompleted[i] = true;
+                }
+            }
+            else
+            {
+                error = true;
+                return;
+            }
+            
+            if (bottomLeftArea.areaState != AreaState.None && eventsToCheck[i].action.actionName.Contains("Press")&& eventsToCheck[i].action.actionName.Contains("Left"))
+            {
+                if (bottomLeftArea.areaState == AreaState.DoubleClicked &&
+                    eventsToCheck[i].action.actionName.Contains("Double"))
+                {
+                    eventCompleted[i] = true;
+                }
+            }
+            else
+            {
+                error = true;
+                return;
+            }
+            
+            
+            
+        }
+    }
+    
+    // ---------- Button Area ----------
+
+    
+    
     public void BottomLeftBtnPressed()
     {
         UpdateAreaState(ref bottomLeftArea);
@@ -101,7 +214,36 @@ public class InputHandler : MonoBehaviour
             area.areaState = AreaState.None;
         }
     }
+
+    private void AreaPressedCheck(Area area)
+    {
+        for (int i = 0; i < eventsToCheck.Length; i++)
+        {
+            if (eventsToCheck[i].action.actionName.Contains("Press"))
+            {
+                if (eventsToCheck[i].action.actionName.Contains("Right"))
+                {
+                    
+                }else if (eventsToCheck[i].action.actionName.Contains("Left"))
+                {
+                    
+                }else if (eventsToCheck[i].action.actionName.Contains("Up"))
+                {
+                    
+                }else if (eventsToCheck[i].action.actionName.Contains("Down"))
+                {
+                    
+                }
+            }
+            else
+            {
+                error = true;
+                
+            }
+        }
+    }
     
+    // ---------- Swipe ----------
     private void HandleSwipe()
     {
         if (Input.touchCount > 0)

@@ -261,6 +261,8 @@ GameObject:
   m_Component:
   - component: {fileID: 76114394}
   - component: {fileID: 76114393}
+  - component: {fileID: 76114396}
+  - component: {fileID: 76114395}
   m_Layer: 0
   m_Name: GameHandler
   m_TagString: Untagged
@@ -295,6 +297,35 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &76114395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76114392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c80f652a3b3af4d2ca422a8f2cb3102f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  faceState: {fileID: 11400000, guid: ca4a3371e9007425298c0377293a1ff5, type: 2}
+  colorState: {fileID: 11400000, guid: 8cd91b3dc86db46a2bdfd108a18f9fdd, type: 2}
+  behaviourState: {fileID: 11400000, guid: 512d984b3a4ab47b4b45e84502290199, type: 2}
+  action: {fileID: 11400000, guid: 5346958209c404a41a9e7f2fc5b01e82, type: 2}
+--- !u!114 &76114396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 76114392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba38f184c122042e1894962022ea83f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventsGenerator: {fileID: 76114395}
 --- !u!1 &207820840
 GameObject:
   m_ObjectHideFlags: 0

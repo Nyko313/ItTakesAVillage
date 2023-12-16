@@ -38,8 +38,6 @@ public class InputHandler : MonoBehaviour
                     swipeDirectionDelta += Input.GetTouch(0).deltaPosition;
                     break;
             }
-
-
         }
         else
         {

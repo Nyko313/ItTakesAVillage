@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Action
+[CreateAssetMenu(fileName = "New Action", menuName = "BabyEvent/Action")]
+public class Action : ScriptableObject
 {
-    public string InputType;
-    public State State;
+    public string actionName;
+    public Texture2D icon;
 }

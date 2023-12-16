@@ -1,0 +1,1602 @@
+fileFormatVersion: 2
+guid: cbdb628c316be7a41ad2acca791617c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2724122378320086903
+    second: bg_dots_3_0
+  - first:
+      213: 6183972069335941898
+    second: bg_dots_3_1
+  - first:
+      213: 2293107703162535753
+    second: bg_dots_3_2
+  - first:
+      213: 3638670844196593422
+    second: bg_dots_3_3
+  - first:
+      213: -68327167304979246
+    second: bg_dots_3_4
+  - first:
+      213: -5590991397823065394
+    second: bg_dots_3_5
+  - first:
+      213: -1908250117809251873
+    second: bg_dots_3_6
+  - first:
+      213: 3362780508316268481
+    second: bg_dots_3_7
+  - first:
+      213: 6187942601628614971
+    second: bg_dots_3_8
+  - first:
+      213: 920107999385936741
+    second: bg_dots_3_9
+  - first:
+      213: -7263571838724325431
+    second: bg_dots_3_10
+  - first:
+      213: 6053299431240553879
+    second: bg_dots_3_11
+  - first:
+      213: -6414947159185889729
+    second: bg_dots_3_12
+  - first:
+      213: -4201679387095174354
+    second: bg_dots_3_13
+  - first:
+      213: -4172291680324972522
+    second: bg_dots_3_14
+  - first:
+      213: 1713431217136643849
+    second: bg_dots_3_15
+  - first:
+      213: -6370775778892421961
+    second: bg_dots_3_16
+  - first:
+      213: -2124458934141904827
+    second: bg_dots_3_17
+  - first:
+      213: -6549641263260623538
+    second: bg_dots_3_18
+  - first:
+      213: 8159784761802422709
+    second: bg_dots_3_19
+  - first:
+      213: 5069148262361449698
+    second: bg_dots_3_20
+  - first:
+      213: -7569959117739691420
+    second: bg_dots_3_21
+  - first:
+      213: 754536119147465992
+    second: bg_dots_3_22
+  - first:
+      213: 1700606658217017064
+    second: bg_dots_3_23
+  - first:
+      213: 511015224039888523
+    second: bg_dots_3_24
+  - first:
+      213: 809941772428355535
+    second: bg_dots_3_25
+  - first:
+      213: 5395864102432501892
+    second: bg_dots_3_26
+  - first:
+      213: 1787017153203599860
+    second: bg_dots_3_27
+  - first:
+      213: 2032667248822479569
+    second: bg_dots_3_28
+  - first:
+      213: 2642828973989529178
+    second: bg_dots_3_29
+  - first:
+      213: -534594154309442464
+    second: bg_dots_3_30
+  - first:
+      213: -6568507319883637198
+    second: bg_dots_3_31
+  - first:
+      213: 6217251247820504858
+    second: bg_dots_3_32
+  - first:
+      213: 8551662321250678558
+    second: bg_dots_3_33
+  - first:
+      213: 612839383265792714
+    second: bg_dots_3_34
+  - first:
+      213: -2064207098011760317
+    second: bg_dots_3_35
+  - first:
+      213: 508717973703721141
+    second: bg_dots_3_36
+  - first:
+      213: 7157970326008085916
+    second: bg_dots_3_37
+  - first:
+      213: -5560643215081156571
+    second: bg_dots_3_38
+  - first:
+      213: 4280182884677833802
+    second: bg_dots_3_39
+  - first:
+      213: -6831228235984121184
+    second: bg_dots_3_40
+  - first:
+      213: -5515693782822692084
+    second: bg_dots_3_41
+  - first:
+      213: -5019477213924789547
+    second: bg_dots_3_42
+  - first:
+      213: -5863832527057996568
+    second: bg_dots_3_43
+  - first:
+      213: -8791215017949857174
+    second: bg_dots_3_44
+  - first:
+      213: -7876587663350188788
+    second: bg_dots_3_45
+  - first:
+      213: -6211590611068166126
+    second: bg_dots_3_46
+  - first:
+      213: 6889543116206802561
+    second: bg_dots_3_47
+  - first:
+      213: 2640761630289818269
+    second: bg_dots_3_48
+  - first:
+      213: 239766021069183608
+    second: bg_dots_3_49
+  - first:
+      213: 7614958291416849367
+    second: bg_dots_3_50
+  - first:
+      213: 2225660610609254781
+    second: bg_dots_3_51
+  - first:
+      213: -867372484294019807
+    second: bg_dots_3_52
+  - first:
+      213: 8306759466796819027
+    second: bg_dots_3_53
+  - first:
+      213: 724545826302321833
+    second: bg_dots_3_54
+  - first:
+      213: 3768734828646431087
+    second: bg_dots_3_55
+  - first:
+      213: -1680324007476147884
+    second: bg_dots_3_56
+  - first:
+      213: -2411553034306766627
+    second: bg_dots_3_57
+  - first:
+      213: -7727830550514456654
+    second: bg_dots_3_58
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bg_dots_3_0
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 2406
+        width: 79
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 988f9834129f13ad0800000000000000
+      internalID: -2724122378320086903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_1
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 2406
+        width: 79
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a03c4bd35d1e1d550800000000000000
+      internalID: 6183972069335941898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_2
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 2445
+        width: 82
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ff6be7e41c2df10800000000000000
+      internalID: 2293107703162535753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_3
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 2455
+        width: 79
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0f98e2bad72f7230800000000000000
+      internalID: 3638670844196593422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_4
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 2450
+        width: 91
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dc2748adc04d0ff0800000000000000
+      internalID: -68327167304979246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2276
+        width: 73
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2dd7e22fec862b0800000000000000
+      internalID: -5590991397823065394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_6
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2267
+        width: 80
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd9d161d0a88485e0800000000000000
+      internalID: -1908250117809251873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_7
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 2269
+        width: 90
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c77cc73e0ffaae20800000000000000
+      internalID: 3362780508316268481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_8
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 2262
+        width: 96
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b318494d20dffd550800000000000000
+      internalID: 6187942601628614971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_9
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 2022
+        width: 95
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 563e46ab951e4cc00800000000000000
+      internalID: 920107999385936741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_10
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 2034
+        width: 81
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf3e4095eb923b90800000000000000
+      internalID: -7263571838724325431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_11
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 2031
+        width: 93
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 795da2ec2c3a10450800000000000000
+      internalID: 6053299431240553879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_12
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 2037
+        width: 94
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36e2dbeb8789f6a0800000000000000
+      internalID: -6414947159185889729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_13
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 2060
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e237c10ebd2a0b5c0800000000000000
+      internalID: -4201679387095174354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_14
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1836
+        width: 100
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61099ee82da0916c0800000000000000
+      internalID: -4172291680324972522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_15
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 1842
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90fae742d9457c710800000000000000
+      internalID: 1713431217136643849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_16
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1859
+        width: 82
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b46473de257697a0800000000000000
+      internalID: -6370775778892421961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_17
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 1874
+        width: 92
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5481192fad76482e0800000000000000
+      internalID: -2124458934141904827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1616
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d1c19f8fffa15a0800000000000000
+      internalID: -6549641263260623538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_19
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1641
+        width: 91
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9f0ea22016d3170800000000000000
+      internalID: 8159784761802422709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_20
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 1638
+        width: 104
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4c7d3bc7b395640800000000000000
+      internalID: 5069148262361449698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_21
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1656
+        width: 106
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46275ee2a4a12f690800000000000000
+      internalID: -7569959117739691420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_22
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 1673
+        width: 101
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d8cf74a96a87a00800000000000000
+      internalID: 754536119147465992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_23
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1396
+        width: 103
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ee70b5deb4c99710800000000000000
+      internalID: 1700606658217017064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_24
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 1402
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86d6b783ad771700800000000000000
+      internalID: 511015224039888523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_25
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 1417
+        width: 82
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7a75230cd7d3b00800000000000000
+      internalID: 809941772428355535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_26
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 1414
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48075c900d5f1ea40800000000000000
+      internalID: 5395864102432501892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_27
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1140
+        width: 88
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f9fa3002a2ccc810800000000000000
+      internalID: 1787017153203599860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_28
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1171
+        width: 85
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1da62a0e71c753c10800000000000000
+      internalID: 2032667248822479569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_29
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1180
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5681c413f63da420800000000000000
+      internalID: 2642828973989529178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_30
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1189
+        width: 93
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 064a265f27db498f0800000000000000
+      internalID: -534594154309442464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_31
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 1189
+        width: 90
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e58cdd469f7d4a0800000000000000
+      internalID: -6568507319883637198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_32
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 952
+        width: 108
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ff1b9c11d184650800000000000000
+      internalID: 6217251247820504858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_33
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 936
+        width: 86
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e173d31929b9da670800000000000000
+      internalID: 8551662321250678558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_34
+      rect:
+        serializedVersion: 2
+        x: 878
+        y: 929
+        width: 101
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac25def0c2e318800800000000000000
+      internalID: 612839383265792714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_35
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 947
+        width: 103
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3494b2cb4967a53e0800000000000000
+      internalID: -2064207098011760317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 633
+        width: 85
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b087714d445f0700800000000000000
+      internalID: 508717973703721141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_37
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 684
+        width: 99
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9dbf724618365360800000000000000
+      internalID: 7157970326008085916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_38
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 694
+        width: 91
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520d66a1570a4d2b0800000000000000
+      internalID: -5560643215081156571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_39
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 716
+        width: 89
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44ddeef7a3466b30800000000000000
+      internalID: 4280182884677833802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_40
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 721
+        width: 91
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a25c8edc1a9231a0800000000000000
+      internalID: -6831228235984121184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_41
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 479
+        width: 100
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0bd5095ab15473b0800000000000000
+      internalID: -5515693782822692084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_42
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 469
+        width: 89
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d278d9711c375ab0800000000000000
+      internalID: -5019477213924789547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_43
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 476
+        width: 96
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e4b352726b7f9ea0800000000000000
+      internalID: -5863832527057996568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_44
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 480
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6af40fd4845ff580800000000000000
+      internalID: -8791215017949857174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_45
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 267
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c05b9cb804db0b290800000000000000
+      internalID: -7876587663350188788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_46
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 268
+        width: 93
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2106129ef3ffbc9a0800000000000000
+      internalID: -6211590611068166126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_47
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 261
+        width: 98
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1868e3a36f29c9f50800000000000000
+      internalID: 6889543116206802561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_48
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 241
+        width: 88
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d92f7ed16bed5a420800000000000000
+      internalID: 2640761630289818269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_49
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 247
+        width: 75
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87a99030de1d35300800000000000000
+      internalID: 239766021069183608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_50
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 111
+        width: 92
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db11536834cda960800000000000000
+      internalID: 7614958291416849367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_51
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 101
+        width: 93
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7191f5888223ee10800000000000000
+      internalID: 2225660610609254781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_52
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 100
+        width: 93
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125f4b1325976f3f0800000000000000
+      internalID: -867372484294019807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_53
+      rect:
+        serializedVersion: 2
+        x: 1223
+        y: 98
+        width: 87
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 352a90559b9874370800000000000000
+      internalID: 8306759466796819027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 91
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4ed38179a1e0a00800000000000000
+      internalID: 724545826302321833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_55
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 0
+        width: 91
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f69fc1aeb5c3d4430800000000000000
+      internalID: 3768734828646431087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_56
+      rect:
+        serializedVersion: 2
+        x: 787
+        y: 0
+        width: 105
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 459c2dac73a4ea8e0800000000000000
+      internalID: -1680324007476147884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_57
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 0
+        width: 94
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd83121da41788ed0800000000000000
+      internalID: -2411553034306766627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg_dots_3_58
+      rect:
+        serializedVersion: 2
+        x: 1406
+        y: 0
+        width: 34
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7ac20ee0b31c490800000000000000
+      internalID: -7727830550514456654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bg_dots_3_0: -2724122378320086903
+      bg_dots_3_1: 6183972069335941898
+      bg_dots_3_10: -7263571838724325431
+      bg_dots_3_11: 6053299431240553879
+      bg_dots_3_12: -6414947159185889729
+      bg_dots_3_13: -4201679387095174354
+      bg_dots_3_14: -4172291680324972522
+      bg_dots_3_15: 1713431217136643849
+      bg_dots_3_16: -6370775778892421961
+      bg_dots_3_17: -2124458934141904827
+      bg_dots_3_18: -6549641263260623538
+      bg_dots_3_19: 8159784761802422709
+      bg_dots_3_2: 2293107703162535753
+      bg_dots_3_20: 5069148262361449698
+      bg_dots_3_21: -7569959117739691420
+      bg_dots_3_22: 754536119147465992
+      bg_dots_3_23: 1700606658217017064
+      bg_dots_3_24: 511015224039888523
+      bg_dots_3_25: 809941772428355535
+      bg_dots_3_26: 5395864102432501892
+      bg_dots_3_27: 1787017153203599860
+      bg_dots_3_28: 2032667248822479569
+      bg_dots_3_29: 2642828973989529178
+      bg_dots_3_3: 3638670844196593422
+      bg_dots_3_30: -534594154309442464
+      bg_dots_3_31: -6568507319883637198
+      bg_dots_3_32: 6217251247820504858
+      bg_dots_3_33: 8551662321250678558
+      bg_dots_3_34: 612839383265792714
+      bg_dots_3_35: -2064207098011760317
+      bg_dots_3_36: 508717973703721141
+      bg_dots_3_37: 7157970326008085916
+      bg_dots_3_38: -5560643215081156571
+      bg_dots_3_39: 4280182884677833802
+      bg_dots_3_4: -68327167304979246
+      bg_dots_3_40: -6831228235984121184
+      bg_dots_3_41: -5515693782822692084
+      bg_dots_3_42: -5019477213924789547
+      bg_dots_3_43: -5863832527057996568
+      bg_dots_3_44: -8791215017949857174
+      bg_dots_3_45: -7876587663350188788
+      bg_dots_3_46: -6211590611068166126
+      bg_dots_3_47: 6889543116206802561
+      bg_dots_3_48: 2640761630289818269
+      bg_dots_3_49: 239766021069183608
+      bg_dots_3_5: -5590991397823065394
+      bg_dots_3_50: 7614958291416849367
+      bg_dots_3_51: 2225660610609254781
+      bg_dots_3_52: -867372484294019807
+      bg_dots_3_53: 8306759466796819027
+      bg_dots_3_54: 724545826302321833
+      bg_dots_3_55: 3768734828646431087
+      bg_dots_3_56: -1680324007476147884
+      bg_dots_3_57: -2411553034306766627
+      bg_dots_3_58: -7727830550514456654
+      bg_dots_3_6: -1908250117809251873
+      bg_dots_3_7: 3362780508316268481
+      bg_dots_3_8: 6187942601628614971
+      bg_dots_3_9: 920107999385936741
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

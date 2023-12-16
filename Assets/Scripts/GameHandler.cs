@@ -20,6 +20,17 @@ public class GameHandler : MonoBehaviour
         faceEvents = eventLists.faceEvents;
         colorEvents = eventLists.colorEvents;
         behaviourEvents = eventLists.behaviourEvents;
+
+        BabyEvent[] test = new[] { new BabyEvent(new Action("SinglePressLeft", null),null),new BabyEvent(new Action("SinglePressRight", null),null)  };
+        inputHandler.StartCheckingEvents(test);
+    }
+
+    private void Update()
+    {
+        if (Time.time > 10f)
+        {
+            TimeFinished();
+        }
     }
 
     private void Test()
@@ -33,9 +44,20 @@ public class GameHandler : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    public void TimeFinished()
     {
-        Test();
+        inputHandler.StopCheckEvents();
+        Debug.Log("Time Finished");
+    }
+
+    public void WrongAction()
+    {
+        Debug.Log("Wrong action");
+    }
+
+    public void AllActionDone()
+    {
+        Debug.Log("All Action Done");
     }
 
     public BabyEvent[] PickEvents(int eventsQuantity = 1)

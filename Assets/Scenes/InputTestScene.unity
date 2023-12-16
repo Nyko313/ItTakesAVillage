@@ -282,6 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 95b7c686a9a3f4242816b1b6773c78e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameHandler: {fileID: 76114396}
 --- !u!4 &76114394
 Transform:
   m_ObjectHideFlags: 0
@@ -326,6 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventsGenerator: {fileID: 76114395}
+  inputHandler: {fileID: 76114393}
 --- !u!1 &207820840
 GameObject:
   m_ObjectHideFlags: 0

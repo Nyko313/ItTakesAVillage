@@ -710,6 +710,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 725653838}
     - target: {fileID: 8921027553230401541, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1078395631}
+    - target: {fileID: 8921027553230401541, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
@@ -771,7 +775,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 382060487083036144, guid: 880e26cca68fe5b418eb43a3afd7d7d0, type: 3}
   m_PrefabInstance: {fileID: 2247825742860028287}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1078395629}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9eec9f5d30f3a1843a7d3fa8f68ae4c4, type: 3}
@@ -863,6 +867,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1078395629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 613440305741699051, guid: 880e26cca68fe5b418eb43a3afd7d7d0, type: 3}
+  m_PrefabInstance: {fileID: 2247825742860028287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1078395631
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078395629}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e4689ae2266e4b047a4cdccca46a6bff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1211331494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1583,7 +1614,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 613440305741699051, guid: 880e26cca68fe5b418eb43a3afd7d7d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1078395631}
   m_SourcePrefab: {fileID: 100100000, guid: 880e26cca68fe5b418eb43a3afd7d7d0, type: 3}
 --- !u!212 &2247825742860028288 stripped
 SpriteRenderer:

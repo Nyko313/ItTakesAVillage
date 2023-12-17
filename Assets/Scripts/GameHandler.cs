@@ -38,7 +38,12 @@ public class GameHandler : MonoBehaviour
 
 
     private bool tutorialRound = true;
-    
+
+    //beahviour
+    [SerializeField] Animator animator;
+    private string curAnime;
+
+
     // mi serve per la creazione mauale del evento
     [SerializeField]
     private States faceState;
@@ -140,13 +145,14 @@ public class GameHandler : MonoBehaviour
         faceSprite.sprite = defaultFace;
         headSprite[0].color = defaultColor;
         headSprite[1].color = defaultColor;
+        animator.SetBool(curAnime, false);
     }
     
     private void StateInitializer()
     {
      foreach(BabyEvent ev in roundEvents)
         {
-
+            print(ev.state.type);
             switch (ev.state.type)
             {
                 case State.Type.Face:
@@ -158,6 +164,8 @@ public class GameHandler : MonoBehaviour
                     break;
                 case State.Type.Behaviour:
                     // TODO: Add Behaviour
+                    animator.SetBool(ev.state.stateName, true);
+                    curAnime = ev.state.stateName;
                     break;
             }
         }

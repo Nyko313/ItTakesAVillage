@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class MenuController : MonoBehaviour
 {
     public GameObject startPanel;
+    public GameObject instructionsPanel;
     public TextMeshProUGUI numberOfPlayersText;
     public Image checkMarkTwinMode; 
         
@@ -21,6 +22,7 @@ public class MenuController : MonoBehaviour
     void Start()
     {
         startPanel.SetActive(false);
+        instructionsPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -37,6 +39,16 @@ public class MenuController : MonoBehaviour
     public void HideStartPanel()
     {
         startPanel.SetActive(false);
+    }
+    
+    public void ShowInstructionsPanle()
+    {
+        instructionsPanel.SetActive(true);
+    }
+    
+    public void HideInstructionsPanle()
+    {
+        instructionsPanel.SetActive(false);
     }
 
     public void IncreaseNumberOfPlayers()

@@ -38,8 +38,8 @@ public class InputHandler : MonoBehaviour
     }
     
     // Check Event
-    private bool[] eventCompleted;
-    private bool[] eventError;
+    public bool[] eventCompleted;
+    public bool[] eventError;
     private bool wrongAction;
     private BabyEvent[] eventsToCheck;
     private bool checkEvents = false;

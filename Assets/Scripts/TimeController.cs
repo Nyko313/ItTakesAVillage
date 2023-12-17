@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TimeController : MonoBehaviour
 {
+    [SerializeField] private Health health;
 
     float remainingTime;
     [SerializeField] float NormalMaxTime = 10f;
@@ -13,9 +14,13 @@ public class TimeController : MonoBehaviour
     private float maxTime;
     public Image timerImage;
 
+    //------ MERGING ---
+    [SerializeField] private GameHandler gameHandler;
+
+
     bool IsHand = false;
 
-    // Start is called before the first frame update
+    // RICORDARE SE AZIONE ESEGUITE BENE PORTARE TIME A 0
     void Start()
     {
         maxTime = NormalMaxTime;
@@ -33,27 +38,29 @@ public class TimeController : MonoBehaviour
         }
         else
         {
-            handover();
+            if (!IsHand) health.takeDamage();
+            switchPhase();
             //skip to the next phase
         }
-
     }
 
-    void handover()
+    public void switchPhase()
     {
-        if(!IsHand)
+        if(!IsHand) // go to handover
         {
+            gameHandler.TimeFinished();
             maxTime = handoverMaxTime;
             remainingTime = maxTime;
             timerImage.GetComponent<Image>().color = new Color32(255, 92, 12, 255);
             timerImage.fillAmount = 100;
         }
-        else
+        else // return to normal game
         {
             maxTime = NormalMaxTime;
             remainingTime = maxTime;
             timerImage.GetComponent<Image>().color = new Color32(90, 230, 104, 255);
             timerImage.fillAmount = 100;
+            gameHandler.StartRound();
         }
         IsHand = !IsHand;
     }

@@ -26,8 +26,6 @@ public class Health : MonoBehaviour
     Animator animator;
 
     //public event Action OutTime; 
-
-
     void Start()
     {
         currentHealth = maxHealth;
@@ -38,10 +36,10 @@ public class Health : MonoBehaviour
     //just for debug
     private void Update()
     {
-      if( Input.GetMouseButtonDown(0)) { takeDamage(); }
+      //if( Input.GetMouseButtonDown(0)) { takeDamage(); }
     }
 
-    void takeDamage() { 
+     public void takeDamage() { 
         currentHealth -= 1;
 
         if (currentHealth <= 0) {

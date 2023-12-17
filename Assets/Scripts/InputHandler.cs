@@ -364,7 +364,7 @@ public class InputHandler : MonoBehaviour
         GUI.color = Color.white;
         
         // Remove for Debugging
-        //return;
+        return;
         int space = 50;
         int debugTextSize = 50;
         GUIStyle debugTextStyle = new GUIStyle();

@@ -1908,12 +1908,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fftSize: 32
-  evaluateMovementEveryNSeconds: 2
+  evaluateMovementEveryNSeconds: 0.7
   keepMovementForSeconds: 1.5
   movementMappings:
   - movement: 2
     xAxis:
-      threshold: 10
+      threshold: 7
       count: 1
       invert: 1
     yAxis:
@@ -1943,20 +1943,20 @@ MonoBehaviour:
       count: 1
       invert: 1
     yAxis:
-      threshold: 10
+      threshold: 5
       count: 1
       invert: 1
     zAxis:
       threshold: 10
-      count: 2
+      count: 1
       invert: 0
   level0Threshold: 0
   level1Threshold: 0
   level2Threshold: 0
   level3Threshold: 0
-  currentMotion: 0
-  currentMagnitudeLevel: 0
-  currentMovementMagnitude: 0
+  currentMotion: 1
+  currentMagnitudeLevel: 4
+  currentMovementMagnitude: 1.0075655
   lastFound: 0
   lastEvaluated: 0
   tmpro: {fileID: 0}

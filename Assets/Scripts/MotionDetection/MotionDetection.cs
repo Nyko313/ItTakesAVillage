@@ -18,7 +18,7 @@ public enum MotionDetected
     NO_MOTION,
     BACK_FRONT,
     LEFT_RIGHT,
-    FLIP_LEFT_RIGHT,
+    UP_DOWN,
 }
 
 public enum MagnitudeLevel
@@ -95,7 +95,7 @@ public class MotionDetection : MonoBehaviour
             new MovementParameters(5, 1, true)
         ),
         new MovementMapping(
-            MotionDetected.FLIP_LEFT_RIGHT,
+            MotionDetected.UP_DOWN,
             new MovementParameters(5, 1, true),
             new MovementParameters(10, 1, true), 
             new MovementParameters(10, 2, false)

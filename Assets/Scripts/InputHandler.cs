@@ -308,6 +308,31 @@ public class InputHandler : MonoBehaviour
     private void CheckMovementDetection()
     {
         if(!checkEvents) return;
+
+        for (int i = 0; i < eventsToCheck.Length; i++)
+        {
+            if (eventsToCheck[i].action.actionName.Contains("Swing"))
+            {
+                if (eventsToCheck[i].action.actionName.Contains("Vertically") && motionDetection.currentMotion == MotionDetected.UP_DOWN)
+                {
+                    
+                }else if (eventsToCheck[i].action.actionName.Contains("Horizontally") && motionDetection.currentMotion == MotionDetected.LEFT_RIGHT)
+                {
+                    
+                }else if (eventsToCheck[i].action.actionName.Contains("Front") && motionDetection.currentMotion == MotionDetected.BACK_FRONT)
+                {
+                    
+                }
+                else
+                {
+                    eventError[i] = true;
+                }
+            }
+            else
+            {
+                eventError[i] = true;
+            }
+        }
         
         
     }
@@ -332,10 +357,10 @@ public class InputHandler : MonoBehaviour
         
         // Remove for Debugging
         //return;
-        int space = 25;
+        int space = 50;
         int debugTextSize = 50;
         GUIStyle debugTextStyle = new GUIStyle();
-        debugTextStyle.fontSize = 25;
+        debugTextStyle.fontSize = 50;
         
         
         GUI.Label(new Rect(10, 80 + space * 0, debugTextSize, debugTextSize), "touchCount: " + Input.touchCount.ToString(), debugTextStyle);

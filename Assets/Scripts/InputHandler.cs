@@ -309,29 +309,37 @@ public class InputHandler : MonoBehaviour
     {
         if(!checkEvents) return;
 
-        for (int i = 0; i < eventsToCheck.Length; i++)
+        if (motionDetection.currentMotion != MotionDetected.NO_MOTION)
         {
-            if (eventsToCheck[i].action.actionName.Contains("Swing"))
+            
+            for (int i = 0; i < eventsToCheck.Length; i++)
             {
-                if (eventsToCheck[i].action.actionName.Contains("Vertically") && motionDetection.currentMotion == MotionDetected.UP_DOWN)
+                if (eventsToCheck[i].action.actionName.Contains("Swing"))
                 {
                     
-                }else if (eventsToCheck[i].action.actionName.Contains("Horizontally") && motionDetection.currentMotion == MotionDetected.LEFT_RIGHT)
-                {
-                    
-                }else if (eventsToCheck[i].action.actionName.Contains("Front") && motionDetection.currentMotion == MotionDetected.BACK_FRONT)
-                {
-                    
+                    if (eventsToCheck[i].action.actionName.Contains("Vertically") && motionDetection.currentMotion == MotionDetected.UP_DOWN)
+                    {
+                        eventCompleted[i] = true;
+                    }else if (eventsToCheck[i].action.actionName.Contains("Horizontally") && motionDetection.currentMotion == MotionDetected.LEFT_RIGHT)
+                    {
+                        eventCompleted[i] = true;
+                    }else if (eventsToCheck[i].action.actionName.Contains("Front") && motionDetection.currentMotion == MotionDetected.BACK_FRONT)
+                    {
+                        eventCompleted[i] = true;
+                    }
+                    else
+                    {
+                        eventError[i] = true;
+                    }
                 }
                 else
                 {
                     eventError[i] = true;
                 }
             }
-            else
-            {
-                eventError[i] = true;
-            }
+            CheckEventError();
+        
+            UpdateEvent();
         }
         
         

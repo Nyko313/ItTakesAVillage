@@ -319,10 +319,10 @@ public class InputHandler : MonoBehaviour
         GUI.color = Color.white;
         
         // Remove for Debugging
-        int space = 25;
+        int space = 50;
         int debugTextSize = 50;
         GUIStyle debugTextStyle = new GUIStyle();
-        debugTextStyle.fontSize = 25;
+        debugTextStyle.fontSize = 50;
         
         
         GUI.Label(new Rect(10, 80 + space * 0, debugTextSize, debugTextSize), "touchCount: " + Input.touchCount.ToString(), debugTextStyle);

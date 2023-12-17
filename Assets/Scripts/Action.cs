@@ -5,11 +5,11 @@ using UnityEngine;
 public class Action
 {
     public string actionName;
-    public Texture2D texture;
+    public Sprite sprite;
 
-    public Action(string actionName, Texture2D texture)
+    public Action(string actionName, Sprite sprite)
     {
         this.actionName = actionName;
-        this.texture = texture;
+        this.sprite = sprite;
     }
 }

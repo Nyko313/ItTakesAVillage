@@ -1934,7 +1934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67de1daff33f142dcad4511cb035dd1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameScene: InputTestScene
+  gameScene: Fede
   startPanel: {fileID: 648224191}
   instructionsPanel: {fileID: 71542577}
   creditsPanel: {fileID: 1655902503}

@@ -139,9 +139,9 @@ public class MotionDetection : MonoBehaviour
             tmpro.text = "Initializing...";
         }
 
-        fftHelperX = new FFTHelper(fftSize, true);
-        fftHelperY = new FFTHelper(fftSize, true);
-        fftHelperZ = new FFTHelper(fftSize, true);
+        fftHelperX = new FFTHelper(fftSize, false);
+        fftHelperY = new FFTHelper(fftSize, false);
+        fftHelperZ = new FFTHelper(fftSize, false);
 
         toMoveX = transform.Find("X");
         toMoveY = transform.Find("Y");

@@ -32,13 +32,17 @@ public class TimeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!stop) timer();
+    }
+
+
+    private void timer() 
+    {
         if (remainingTime > 0)
         {
             remainingTime -= Time.deltaTime;
             timerImage.fillAmount = remainingTime / maxTime;
             //print(remainingTime / maxTime);
-
-            if (stop) return;
         }
         else
         {
@@ -47,9 +51,6 @@ public class TimeController : MonoBehaviour
             //skip to the next phase
         }
     }
-
-
-    private void timer() {}
 
     public void switchPhase()
     {

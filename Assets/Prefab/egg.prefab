@@ -241,6 +241,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9abe55b3cd5eba241a1d27e50a65f101, type: 3}
   - {fileID: 21300000, guid: 6c2b440e1a6f68849b47b1dfd067a1a1, type: 3}
   - {fileID: 21300000, guid: 67148ffd8d04fd2488cb53d829957494, type: 3}
+  Chicken: {fileID: 0}
+  scaredChicken: {fileID: 21300000, guid: 6689a05f12172474d888f16976e0bafa, type: 3}
+  timeController: {fileID: 0}
 --- !u!1 &1593245005915146600
 GameObject:
   m_ObjectHideFlags: 0

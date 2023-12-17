@@ -42,10 +42,8 @@ MonoBehaviour:
   - actionName: DoubleSwipeRight
     sprite: {fileID: 21300000, guid: fda422989dfb74db5858b367a629830d, type: 3}
   - actionName: SwingVertically
-    sprite: {fileID: 21300000, guid: c97ad96b69ac14277b69eaedb2a6d77f, type: 3}
+    sprite: {fileID: 1300441239231905413, guid: 21e4508a2817342b2b4112ed34daacbc, type: 3}
   - actionName: SwingHorizontally
     sprite: {fileID: 21300000, guid: 20024373e23964233b46db4df4beccc2, type: 3}
-  - actionName: Rotate
-    sprite: {fileID: 21300000, guid: 7ed011dd74bbf4270ab440976e8b89f8, type: 3}
-  - actionName: Pitch
-    sprite: {fileID: 21300000, guid: 870f7edc20f38474c8139b2a22784b78, type: 3}
+  - actionName: SwingFront
+    sprite: {fileID: 21300000, guid: c97ad96b69ac14277b69eaedb2a6d77f, type: 3}

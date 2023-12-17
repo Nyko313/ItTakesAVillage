@@ -83,7 +83,6 @@ public class InputHandler : MonoBehaviour
     {
         eventsToCheck = events;
         eventCompleted = new bool[events.Length];
-
         eventError = new bool[events.Length];
         checkEvents = true;
     }
@@ -98,10 +97,10 @@ public class InputHandler : MonoBehaviour
         }
 
         bool allEventCompleted = true;
-
+        
+        
         foreach (var b in eventCompleted)
         {
-            Debug.Log(b);
             if (b == false)
             {
                 allEventCompleted = false;
@@ -303,18 +302,6 @@ public class InputHandler : MonoBehaviour
 
     private void  OnGUI()
     {
-        int space = 55;
-        int debugTextSize = 50;
-        GUIStyle debugTextStyle = new GUIStyle();
-        debugTextStyle.fontSize = 70;
-        
-        
-        GUI.Label(new Rect(50, 80 + space * 0, debugTextSize, debugTextSize), "touchCount: " + Input.touchCount.ToString(), debugTextStyle);
-        GUI.Label(new Rect(50, 80 + space * 1, debugTextSize, debugTextSize), "swipeDirection: " + swipeDirection.ToString(), debugTextStyle);
-        GUI.Label(new Rect(50, 80 + space * 2, debugTextSize, debugTextSize), "centerArea: " + centerArea.areaState.ToString(), debugTextStyle);
-        GUI.Label(new Rect(50, 80 + space * 3, debugTextSize, debugTextSize), "bottomLeftArea: " + bottomLeftArea.areaState.ToString(), debugTextStyle);
-        GUI.Label(new Rect(50, 80 + space * 4, debugTextSize, debugTextSize), "bottomRightArea: " + bottomRightArea.areaState.ToString(), debugTextStyle);
-
         GUI.color = new Color(0,0,0,0);
         if (GUI.Button(new Rect(0, Screen.height * 0.25f, Screen.width, Screen.height * 0.5f), ""))
         {
@@ -330,6 +317,24 @@ public class InputHandler : MonoBehaviour
         }
         
         GUI.color = Color.white;
+        
+        // Remove for Debugging
+        int space = 50;
+        int debugTextSize = 50;
+        GUIStyle debugTextStyle = new GUIStyle();
+        debugTextStyle.fontSize = 50;
+        
+        
+        GUI.Label(new Rect(10, 80 + space * 0, debugTextSize, debugTextSize), "touchCount: " + Input.touchCount.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 1, debugTextSize, debugTextSize), "swipeDirection: " + swipeDirection.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 2, debugTextSize, debugTextSize), "centerArea: " + centerArea.areaState.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 3, debugTextSize, debugTextSize), "bottomLeftArea: " + bottomLeftArea.areaState.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 4, debugTextSize, debugTextSize), "bottomRightArea: " + bottomRightArea.areaState.ToString(), debugTextStyle);
+
+        for(int i = 0; i < eventCompleted.Length; i++)
+        {
+            GUI.Label(new Rect(10, 80 + space * (5 + i), debugTextSize, debugTextSize), "event " + i +": " + eventCompleted[i] + " : " + eventsToCheck[i].action.actionName, debugTextStyle);
+        }
     }
 
 }

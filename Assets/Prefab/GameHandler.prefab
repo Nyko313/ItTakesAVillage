@@ -42,7 +42,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9133532514878187021}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95b7c686a9a3f4242816b1b6773c78e7, type: 3}
   m_Name: 
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9133532514878187021}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba38f184c122042e1894962022ea83f5, type: 3}
   m_Name: 
@@ -67,9 +67,11 @@ MonoBehaviour:
   timeController: {fileID: 1502251815630548764}
   health: {fileID: 0}
   faceSprite: {fileID: 0}
-  headSprite: {fileID: 0}
+  headSprite:
+  - {fileID: 0}
+  - {fileID: 0}
   bodySprite: {fileID: 0}
-  faceState: {fileID: 0}
+  faceState: {fileID: 11400000, guid: ca4a3371e9007425298c0377293a1ff5, type: 2}
 --- !u!114 &2053217076389092141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +79,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9133532514878187021}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c80f652a3b3af4d2ca422a8f2cb3102f, type: 3}
   m_Name: 

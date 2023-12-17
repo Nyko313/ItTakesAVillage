@@ -121,6 +121,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -128,10 +141,10 @@ TextureImporter:
       name: doubt_0
       rect:
         serializedVersion: 2
-        x: 220
-        y: 331
+        x: 245
+        y: 379
         width: 226
-        height: 152
+        height: 153
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,8 +162,8 @@ TextureImporter:
       name: doubt_1
       rect:
         serializedVersion: 2
-        x: 574
-        y: 389
+        x: 599
+        y: 437
         width: 198
         height: 87
       alignment: 0
@@ -170,10 +183,10 @@ TextureImporter:
       name: doubt_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 461
-        height: 365
+        x: 24
+        y: 47
+        width: 462
+        height: 366
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +204,8 @@ TextureImporter:
       name: doubt_3
       rect:
         serializedVersion: 2
-        x: 414
-        y: 12
+        x: 439
+        y: 60
         width: 103
         height: 37
       alignment: 0
@@ -212,9 +225,9 @@ TextureImporter:
       name: doubt_4
       rect:
         serializedVersion: 2
-        x: 488
-        y: 7
-        width: 459
+        x: 513
+        y: 55
+        width: 460
         height: 349
       alignment: 0
       pivot: {x: 0, y: 0}

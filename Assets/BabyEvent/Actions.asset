@@ -14,38 +14,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actions:
   - actionName: SinglePressLeft
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 4ab03e8775f4a417183e86e9f5c57078, type: 3}
   - actionName: SinglePressRight
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 4ab03e8775f4a417183e86e9f5c57078, type: 3}
   - actionName: SinglePressCenter
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 4ab03e8775f4a417183e86e9f5c57078, type: 3}
   - actionName: DoublePressLeft
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 5298d434efebd48d39c69424a745174e, type: 3}
   - actionName: DoublePressRight
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 5298d434efebd48d39c69424a745174e, type: 3}
   - actionName: DoublePressCenter
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 5298d434efebd48d39c69424a745174e, type: 3}
   - actionName: SingleSwipeUp
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: d531ab71e89d24788909a631cce1d169, type: 3}
   - actionName: SingleSwipeDown
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: a488107a15ba9486c956b991d98920d6, type: 3}
   - actionName: SingleSwipeLeft
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 3c8b0691cb7a84511906886f5d143508, type: 3}
   - actionName: SingleSwipeRight
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: f60ad807b39d24b14aed61edb0ce4b0a, type: 3}
   - actionName: DoubleSwipeUp
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 57022e7c0ea1e4aa99d5293544261805, type: 3}
   - actionName: DoubleSwipeDown
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 31ffa594995f844ea9f3a24dcf4a8ecf, type: 3}
   - actionName: DoubleSwipeLeft
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 11824d7df41c44b58976fe677d5331ec, type: 3}
   - actionName: DoubleSwipeRight
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: fda422989dfb74db5858b367a629830d, type: 3}
   - actionName: SwingVertically
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: c97ad96b69ac14277b69eaedb2a6d77f, type: 3}
   - actionName: SwingHorizontally
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 20024373e23964233b46db4df4beccc2, type: 3}
   - actionName: Rotate
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 7ed011dd74bbf4270ab440976e8b89f8, type: 3}
   - actionName: Pitch
-    texture: {fileID: 0}
+    sprite: {fileID: 21300000, guid: 870f7edc20f38474c8139b2a22784b78, type: 3}

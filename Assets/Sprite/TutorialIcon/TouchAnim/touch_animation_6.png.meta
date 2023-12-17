@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 363bd79198ec470429a763bf937496aa
+guid: 844cbd4069d5a4029b40cad4a4c1748e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6101107256635161792
-    second: expression_0_0
-  - first:
-      213: 6036718212086743212
-    second: expression_0_1
-  - first:
-      213: 3204106764224766963
-    second: expression_0_2
-  - first:
-      213: -2053429688648966908
-    second: expression_0_3
-  - first:
-      213: -148056602322705539
-    second: expression_0_4
+      213: -9119038381868213031
+    second: touch_animation_6_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -121,17 +109,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: expression_0_0
+      name: touch_animation_6_0
       rect:
         serializedVersion: 2
-        x: 549
-        y: 1623
-        width: 102
-        height: 52
+        x: 7
+        y: 5
+        width: 486
+        height: 489
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,92 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ccfb4099bc7ba450800000000000000
-      internalID: 6101107256635161792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: expression_0_1
-      rect:
-        serializedVersion: 2
-        x: 746
-        y: 1622
-        width: 96
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ca0cf80ea3bb6c350800000000000000
-      internalID: 6036718212086743212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: expression_0_2
-      rect:
-        serializedVersion: 2
-        x: 239
-        y: 1292
-        width: 462
-        height: 330
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f32b004026477c20800000000000000
-      internalID: 3204106764224766963
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: expression_0_3
-      rect:
-        serializedVersion: 2
-        x: 672
-        y: 1298
-        width: 87
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 40d56d4e390c083e0800000000000000
-      internalID: -2053429688648966908
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: expression_0_4
-      rect:
-        serializedVersion: 2
-        x: 725
-        y: 1292
-        width: 462
-        height: 330
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d7367ebfd4ff1fdf0800000000000000
-      internalID: -148056602322705539
+      spriteID: 9dc979b08eaa27180800000000000000
+      internalID: -9119038381868213031
       vertices: []
       indices: 
       edges: []
@@ -240,11 +157,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      expression_0_0: 6101107256635161792
-      expression_0_1: 6036718212086743212
-      expression_0_2: 3204106764224766963
-      expression_0_3: -2053429688648966908
-      expression_0_4: -148056602322705539
+      touch_animation_6_0: -9119038381868213031
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

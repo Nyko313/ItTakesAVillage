@@ -1,13 +1,22 @@
 fileFormatVersion: 2
-guid: 240d66b80f49733468cab254a3edc441
+guid: 04da6a9b7b49b49da965f7b56f1544f0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4396136994341983667
-    second: cringe_0
+      213: -7192231952695602531
+    second: idle_face_0
   - first:
-      213: 7923483070544037977
-    second: cringe_1
+      213: -7803701977329382194
+    second: idle_face_1
+  - first:
+      213: -3573145697383614665
+    second: idle_face_2
+  - first:
+      213: -9109454191123999791
+    second: idle_face_3
+  - first:
+      213: 2820618461429832992
+    second: idle_face_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,13 +138,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cringe_0
+      name: idle_face_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 69
-        width: 972
-        height: 326
+        x: 334
+        y: 427
+        width: 102
+        height: 52
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4aea4402b8cdf2c0800000000000000
-      internalID: -4396136994341983667
+      spriteID: d925d55252f003c90800000000000000
+      internalID: -7192231952695602531
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cringe_1
+      name: idle_face_1
       rect:
         serializedVersion: 2
-        x: 435
-        y: 42
-        width: 88
-        height: 45
+        x: 531
+        y: 426
+        width: 96
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +173,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 958499b4fddd5fd60800000000000000
-      internalID: 7923483070544037977
+      spriteID: eccc44cb56ea3b390800000000000000
+      internalID: -7803701977329382194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_face_2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 96
+        width: 462
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 737fbb86be2a96ec0800000000000000
+      internalID: -3573145697383614665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_face_3
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 102
+        width: 87
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d35c585da7b49180800000000000000
+      internalID: -9109454191123999791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: idle_face_4
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 96
+        width: 462
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d1f60eb89d42720800000000000000
+      internalID: 2820618461429832992
       vertices: []
       indices: 
       edges: []
@@ -181,8 +253,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cringe_0: -4396136994341983667
-      cringe_1: 7923483070544037977
+      idle_face_0: -7192231952695602531
+      idle_face_1: -7803701977329382194
+      idle_face_2: -3573145697383614665
+      idle_face_3: -9109454191123999791
+      idle_face_4: 2820618461429832992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,31 +1,43 @@
 fileFormatVersion: 2
-guid: e23ad3be88271d24e981280982cd84a5
+guid: e3f296bb4e271479ba19b42be009bf1d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7311199875997961518
-    second: smirk_0
+      213: 6266176060360064
+    second: happy_0
   - first:
-      213: 7897985110659261351
-    second: smirk_1
+      213: 3193106209548952640
+    second: happy_1
   - first:
-      213: -3172282004186725660
-    second: smirk_2
+      213: 9007878228973910016
+    second: happy_2
   - first:
-      213: -3353846743274283918
-    second: smirk_3
+      213: -7609154811369545380
+    second: happy_3
   - first:
-      213: -1400898192859858576
-    second: smirk_4
+      213: -6712656766815208701
+    second: happy_4
   - first:
-      213: 1534602630141867898
-    second: smirk_5
+      213: -8040711958805771792
+    second: happy_5
   - first:
-      213: 3861084835098637255
-    second: smirk_6
+      213: -5778940713444667941
+    second: happy_6
   - first:
-      213: -199791736176374734
-    second: smirk_7
+      213: -729891031834249776
+    second: happy_7
+  - first:
+      213: -1023249637084565850
+    second: happy_8
+  - first:
+      213: -2393240513285694997
+    second: happy_9
+  - first:
+      213: 3986295080230820885
+    second: happy_10
+  - first:
+      213: 8450939961874301933
+    second: happy_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -130,17 +142,156 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smirk_0
+      name: happy_0
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 470
+        width: 119
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0858d2ecd03461000800000000000000
+      internalID: 6266176060360064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happy_1
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 488
+        width: 102
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04462460e21305c20800000000000000
+      internalID: 3193106209548952640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happy_2
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 133
+        width: 464
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008f6f10689620d70800000000000000
+      internalID: 9007878228973910016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happy_3
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 47
+        width: 151
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c512d5b930ad66690800000000000000
+      internalID: -7609154811369545380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happy_4
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 132
+        width: 466
+        height: 264
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b7bda5c3ad7d2a0800000000000000
+      internalID: -6712656766815208701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happy_5
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 90
+        width: 24
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f985223317a96090800000000000000
+      internalID: -8040711958805771792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: happy_6
       rect:
         serializedVersion: 2
         x: 191
-        y: 372
-        width: 198
-        height: 132
+        y: 77
+        width: 29
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +299,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e2d0db20d89967560800000000000000
-      internalID: 7311199875997961518
+      spriteID: bdd861d0a041dcfa0800000000000000
+      internalID: -5778940713444667941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smirk_1
+      name: happy_7
       rect:
         serializedVersion: 2
-        x: 388
-        y: 444
-        width: 39
-        height: 85
+        x: 229
+        y: 80
+        width: 25
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +320,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a36b22ec974b9d60800000000000000
-      internalID: 7897985110659261351
+      spriteID: 0d5b6c249f7eed5f0800000000000000
+      internalID: -729891031834249776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smirk_2
+      name: happy_8
       rect:
         serializedVersion: 2
-        x: 440
-        y: 457
-        width: 40
-        height: 68
+        x: 263
+        y: 79
+        width: 20
+        height: 34
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +341,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e2061d135ac9f3d0800000000000000
-      internalID: -3172282004186725660
+      spriteID: 6aee60160efacc1f0800000000000000
+      internalID: -1023249637084565850
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smirk_3
+      name: happy_9
       rect:
         serializedVersion: 2
-        x: 491
-        y: 368
-        width: 200
-        height: 131
+        x: 305
+        y: 89
+        width: 11
+        height: 10
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,20 +362,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 27c190c082eb471d0800000000000000
-      internalID: -3353846743274283918
+      spriteID: be9588fde6089ced0800000000000000
+      internalID: -2393240513285694997
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smirk_4
+      name: happy_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 136
-        width: 8
-        height: 9
+        x: 722
+        y: 86
+        width: 25
+        height: 39
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,20 +383,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 079f91014820f8ce0800000000000000
-      internalID: -1400898192859858576
+      spriteID: 51c9b03514a225730800000000000000
+      internalID: 3986295080230820885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smirk_5
+      name: happy_11
       rect:
         serializedVersion: 2
-        x: 33
-        y: 90
-        width: 363
-        height: 269
+        x: 763
+        y: 85
+        width: 23
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,50 +404,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a777cf026f00c4510800000000000000
-      internalID: 1534602630141867898
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smirk_6
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 122
-        width: 358
-        height: 241
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c3b3bb5334559530800000000000000
-      internalID: 3861084835098637255
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smirk_7
-      rect:
-        serializedVersion: 2
-        x: 331
-        y: 0
-        width: 215
-        height: 111
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 23c062879723a3df0800000000000000
-      internalID: -199791736176374734
+      spriteID: de3cbadce15c74570800000000000000
+      internalID: 8450939961874301933
       vertices: []
       indices: 
       edges: []
@@ -312,14 +421,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      smirk_0: 7311199875997961518
-      smirk_1: 7897985110659261351
-      smirk_2: -3172282004186725660
-      smirk_3: -3353846743274283918
-      smirk_4: -1400898192859858576
-      smirk_5: 1534602630141867898
-      smirk_6: 3861084835098637255
-      smirk_7: -199791736176374734
+      happy_0: 6266176060360064
+      happy_1: 3193106209548952640
+      happy_10: 3986295080230820885
+      happy_11: 8450939961874301933
+      happy_2: 9007878228973910016
+      happy_3: -7609154811369545380
+      happy_4: -6712656766815208701
+      happy_5: -8040711958805771792
+      happy_6: -5778940713444667941
+      happy_7: -729891031834249776
+      happy_8: -1023249637084565850
+      happy_9: -2393240513285694997
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

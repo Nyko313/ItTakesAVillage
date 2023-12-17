@@ -135,6 +135,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &444760448 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 2610674744551311948, guid: 880e26cca68fe5b418eb43a3afd7d7d0, type: 3}
+  m_PrefabInstance: {fileID: 2247825742860028287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,6 +232,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &577984515 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 8939404792762238662, guid: 880e26cca68fe5b418eb43a3afd7d7d0, type: 3}
+  m_PrefabInstance: {fileID: 2247825742860028287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &628377192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -287,6 +297,22 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 725653838}
+    - target: {fileID: 8921027553230401541, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: bodySprite
+      value: 
+      objectReference: {fileID: 577984515}
+    - target: {fileID: 8921027553230401541, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: faceSprite
+      value: 
+      objectReference: {fileID: 1151652873}
+    - target: {fileID: 8921027553230401541, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: 'headSprite.Array.data[0]'
+      value: 
+      objectReference: {fileID: 444760448}
+    - target: {fileID: 8921027553230401541, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: 'headSprite.Array.data[1]'
+      value: 
+      objectReference: {fileID: 577984515}
     - target: {fileID: 9133532514878187021, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
       propertyPath: m_Name
       value: GameHandler
@@ -307,6 +333,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eec9f5d30f3a1843a7d3fa8f68ae4c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!212 &1151652873 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 6644099976053719137, guid: 880e26cca68fe5b418eb43a3afd7d7d0, type: 3}
+  m_PrefabInstance: {fileID: 2247825742860028287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1836166026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8980085616022214629, guid: 3f5ecbe829715ba4690d14bf06fd7545, type: 3}

@@ -7,6 +7,7 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour
 {
     [SerializeField] private GameHandler gameHandler;
+    [SerializeField] private MotionDetection motionDetection;
 
     public enum SwipeDirection
     {
@@ -75,6 +76,8 @@ public class InputHandler : MonoBehaviour
         UpdateAreaClickedTimer(ref bottomRightArea);
         UpdateAreaClickedTimer(ref bottomLeftArea);
         UpdateAreaClickedTimer(ref centerArea);
+
+        CheckMovementDetection();
     }
     
     // ---------- Read Event Action ----------
@@ -299,6 +302,15 @@ public class InputHandler : MonoBehaviour
             }
         }
     }
+    
+    // ---------- Motion Detection -------------
+
+    private void CheckMovementDetection()
+    {
+        if(!checkEvents) return;
+        
+        
+    }
 
     private void  OnGUI()
     {
@@ -319,6 +331,7 @@ public class InputHandler : MonoBehaviour
         GUI.color = Color.white;
         
         // Remove for Debugging
+        //return;
         int space = 25;
         int debugTextSize = 50;
         GUIStyle debugTextStyle = new GUIStyle();
@@ -330,10 +343,13 @@ public class InputHandler : MonoBehaviour
         GUI.Label(new Rect(10, 80 + space * 2, debugTextSize, debugTextSize), "centerArea: " + centerArea.areaState.ToString(), debugTextStyle);
         GUI.Label(new Rect(10, 80 + space * 3, debugTextSize, debugTextSize), "bottomLeftArea: " + bottomLeftArea.areaState.ToString(), debugTextStyle);
         GUI.Label(new Rect(10, 80 + space * 4, debugTextSize, debugTextSize), "bottomRightArea: " + bottomRightArea.areaState.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 5, debugTextSize, debugTextSize), "motion: " + motionDetection.currentMotion.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 6, debugTextSize, debugTextSize), "motionMagnitude: " + motionDetection.currentMagnitudeLevel.ToString(), debugTextStyle);
+        
 
         for(int i = 0; i < eventCompleted.Length; i++)
         {
-            GUI.Label(new Rect(10, 80 + space * (5 + i), debugTextSize, debugTextSize), "event " + i +": " + eventCompleted[i] + " : " + eventsToCheck[i].action.actionName, debugTextStyle);
+            GUI.Label(new Rect(10, 80 + space * (7 + i), debugTextSize, debugTextSize), "event " + i +": " + eventCompleted[i] + " : " + eventsToCheck[i].action.actionName, debugTextStyle);
         }
     }
 

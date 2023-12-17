@@ -463,11 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee6b1f3ea1e74c3f90fa7d7f2803b9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  toMoveX: {fileID: 0}
-  toMoveY: {fileID: 0}
-  toMoveZ: {fileID: 0}
-  toMoveMagnitude: {fileID: 0}
-  tmpro: {fileID: 247356317}
+  fftSize: 32
   evaluateMovementEveryNSeconds: 2
   keepMovementForSeconds: 1.5
   movementMappings:
@@ -510,10 +506,16 @@ MonoBehaviour:
       threshold: 10
       count: 2
       invert: 0
-  fftSize: 64
+  level0Threshold: 0
+  level1Threshold: 0
+  level2Threshold: 0
+  level3Threshold: 0
+  currentMotion: 0
+  currentMagnitudeLevel: 0
+  currentMovementMagnitude: 0
   lastFound: 0
   lastEvaluated: 0
-  currentMotion: 0
+  tmpro: {fileID: 0}
 --- !u!1 &2033685054
 GameObject:
   m_ObjectHideFlags: 0

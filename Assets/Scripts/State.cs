@@ -4,7 +4,15 @@ using UnityEngine;
 [System.Serializable]
 public class State
 {
-    [SerializeField]
+    public enum Type
+    {
+        Face,
+        Color,
+        Behaviour
+    }
+    
     public string stateName;
-    public Texture2D stateTexture;
+    public Sprite faceSprite;
+    public Color skinColor;
+    public Type type;
 }

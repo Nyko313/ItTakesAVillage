@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 240d66b80f49733468cab254a3edc441
+guid: 14ba5751717f847be9775f5dd29782be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4396136994341983667
-    second: cringe_0
+      213: 5106477088455114495
+    second: damage_face_0
   - first:
-      213: 7923483070544037977
-    second: cringe_1
+      213: 1257980973062447428
+    second: damage_face_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -129,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cringe_0
+      name: damage_face_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 69
-        width: 972
-        height: 326
+        x: 81
+        y: 85
+        width: 840
+        height: 359
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d4aea4402b8cdf2c0800000000000000
-      internalID: -4396136994341983667
+      spriteID: ffeb90f4bd9ddd640800000000000000
+      internalID: 5106477088455114495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cringe_1
+      name: damage_face_1
       rect:
         serializedVersion: 2
-        x: 435
-        y: 42
-        width: 88
-        height: 45
+        x: 562
+        y: 358
+        width: 146
+        height: 136
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,8 +164,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 958499b4fddd5fd60800000000000000
-      internalID: 7923483070544037977
+      spriteID: 4416699a70f357110800000000000000
+      internalID: 1257980973062447428
       vertices: []
       indices: 
       edges: []
@@ -181,8 +181,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cringe_0: -4396136994341983667
-      cringe_1: 7923483070544037977
+      damage_face_0: 5106477088455114495
+      damage_face_1: 1257980973062447428
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

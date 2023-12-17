@@ -14,16 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   states:
   - stateName: Anger
-    stateTexture: {fileID: 2800000, guid: ef1e1835873122a4b846ca098a217928, type: 3}
+    faceSprite: {fileID: 21300000, guid: ef1e1835873122a4b846ca098a217928, type: 3}
+    skinColor: {r: 0, g: 0, b: 0, a: 0}
+    type: 0
   - stateName: Confusion
-    stateTexture: {fileID: 2800000, guid: 38b89ed5d8fda8148baa517800017878, type: 3}
+    faceSprite: {fileID: 21300000, guid: 38b89ed5d8fda8148baa517800017878, type: 3}
+    skinColor: {r: 0, g: 0, b: 0, a: 0}
+    type: 0
   - stateName: Cringe
-    stateTexture: {fileID: 2800000, guid: 240d66b80f49733468cab254a3edc441, type: 3}
+    faceSprite: {fileID: 21300000, guid: 240d66b80f49733468cab254a3edc441, type: 3}
+    skinColor: {r: 0, g: 0, b: 0, a: 0}
+    type: 0
   - stateName: Doubt
-    stateTexture: {fileID: 2800000, guid: b3f240d7629e25c47be9d26034959c35, type: 3}
+    faceSprite: {fileID: 21300000, guid: b3f240d7629e25c47be9d26034959c35, type: 3}
+    skinColor: {r: 0, g: 0, b: 0, a: 0}
+    type: 0
   - stateName: Fear
-    stateTexture: {fileID: 2800000, guid: e3a8802d03742bd4b8285ef06861a019, type: 3}
+    faceSprite: {fileID: -4716443885295417026, guid: d2b4bc5072bac45439654624fc4cc745, type: 3}
+    skinColor: {r: 0, g: 0, b: 0, a: 0}
+    type: 0
   - stateName: Sadness
-    stateTexture: {fileID: 2800000, guid: 893922cd8833f5c40a92548d71e76026, type: 3}
-  - stateName: Smirk
-    stateTexture: {fileID: 2800000, guid: e23ad3be88271d24e981280982cd84a5, type: 3}
+    faceSprite: {fileID: 21300000, guid: 893922cd8833f5c40a92548d71e76026, type: 3}
+    skinColor: {r: 0, g: 0, b: 0, a: 1}
+    type: 0

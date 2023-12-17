@@ -14,14 +14,20 @@ public class GameHandler : MonoBehaviour
     [SerializeField] private Health health;
 
     [SerializeField] private SpriteRenderer faceSprite;
-    [SerializeField] private SpriteRenderer headSprite;
+    [SerializeField] private SpriteRenderer[] headSprite;
     [SerializeField] private SpriteRenderer bodySprite;
+
+    private Sprite defaultFace;
+    private Color defaultColor;
+    
     //qualcosa per il movimento
 
 
     private BabyEvent[] faceEvents;
     private BabyEvent[] colorEvents;
     private BabyEvent[] behaviourEvents;
+
+    private BabyEvent[] roundEvents;
 
 
     // mi serve per la creazione mauale del evento
@@ -34,12 +40,14 @@ public class GameHandler : MonoBehaviour
         faceEvents = eventLists.faceEvents;
         colorEvents = eventLists.colorEvents;
         behaviourEvents = eventLists.behaviourEvents;
+        defaultColor = headSprite[0].color;
+        defaultFace = faceSprite.sprite;
         StartRound();
     }
 
     private void Update()
     {
-        Test();
+        //Test();
     }
 
     private void Test() // Testa una generazione  array random di eventi
@@ -57,52 +65,54 @@ public class GameHandler : MonoBehaviour
     public void StartRound(int eventsQuantity = 1) // fa avviare il round  manuale di eventi in questo caso
     {
         //FOR NOW
-        BabyEvent[] RoundEvents = new[] { new BabyEvent(new Action("DoubleSwipeUp", null), faceState.states.ElementAt(1) ), new BabyEvent(new Action("SingleSwipeRight", null), null) };
+        //roundEvents = new[] { new BabyEvent(new Action("DoubleSwipeUp", null), faceState.states.ElementAt(1) ), new BabyEvent(new Action("SingleSwipeRight", null), null) };
+        roundEvents = PickEvents(2);
         //NOT FOR NOW
         //PickEvents(eventsQuantity) number must be defined 
 
-        StateInitializer(RoundEvents);
-        inputHandler.StartCheckingEvents(RoundEvents);
+        StateInitializer();
+        inputHandler.StartCheckingEvents(roundEvents);
 
         //if action a new action is resolved
             //RUN Green border
             //StateDeactivator();
     }
-    private void StateInitializer(BabyEvent[] RoundEvents)
+
+    private void FinishRound()
     {
-     foreach(BabyEvent eve in RoundEvents)
+        faceSprite.sprite = defaultFace;
+        headSprite[0].color = defaultColor;
+        headSprite[1].color = defaultColor;
+    }
+    
+    private void StateInitializer()
+    {
+     foreach(BabyEvent ev in roundEvents)
         {
-            // questo è il caso face
-            Texture2D tex = eve.state.stateTexture;
-            faceSprite.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), new Vector2(tex.width / 2, tex.height / 2)); 
 
-
-            // per il coso completo serve questo 
-           /* switch (eve.state.type)
+            switch (ev.state.type)
             {
-                case 'face':
+                case State.Type.Face:
+                    faceSprite.sprite = ev.state.faceSprite;
                     break;
-
-                case 'colur':
+                case State.Type.Color:
+                    headSprite[0].color = ev.state.skinColor;
+                    headSprite[1].color = ev.state.skinColor;
                     break;
-
-                case 'behaviour':
+                case State.Type.Behaviour:
+                    // TODO: Add Behaviour
                     break;
-
-            } */
+            }
         }
     }
 
-    private void StateDeactivator()
-    {
-
-    }
 
     //-------- Round Action -----------
     public void TimeFinished() // stop checking 
     {
         inputHandler.StopCheckEvents(); 
         Debug.Log("Time Finished");
+        FinishRound();
     }
 
     public void WrongAction()
@@ -110,6 +120,7 @@ public class GameHandler : MonoBehaviour
         health.takeDamage();
         timeController.switchPhase();
         Debug.Log("Wrong action");
+        FinishRound();
     }
 
     public void AllActionDone()
@@ -117,10 +128,11 @@ public class GameHandler : MonoBehaviour
         //RUN HAPPY ANIMATION gold border plus happy face
         timeController.switchPhase();
         Debug.Log("All Action Done");
+        FinishRound();
     }
 
     //------------- Set Up actions ----------
-    public BabyEvent[] PickEvents(int eventsQuantity = 1)
+    private BabyEvent[] PickEvents(int eventsQuantity = 1)
     {
         Random rand = new Random();
         

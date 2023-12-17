@@ -118,6 +118,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -125,10 +138,10 @@ TextureImporter:
       name: anger_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 53
-        width: 466
-        height: 411
+        x: 24
+        y: 96
+        width: 467
+        height: 412
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,8 +159,8 @@ TextureImporter:
       name: anger_1
       rect:
         serializedVersion: 2
-        x: 417
-        y: 25
+        x: 442
+        y: 68
         width: 125
         height: 74
       alignment: 0
@@ -167,9 +180,9 @@ TextureImporter:
       name: anger_2
       rect:
         serializedVersion: 2
-        x: 476
-        y: 67
-        width: 475
+        x: 501
+        y: 110
+        width: 476
         height: 392
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -188,10 +201,10 @@ TextureImporter:
       name: anger_3
       rect:
         serializedVersion: 2
-        x: 466
-        y: 0
+        x: 491
+        y: 42
         width: 54
-        height: 24
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fede.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/InputTestScene.unity
+    guid: 80e1b7388273c4432973a795ec4fa6ab
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class MenuController : MonoBehaviour
 {
+    public string gameScene;
     public GameObject startPanel;
     public GameObject instructionsPanel;
+    public GameObject creditsPanel;
     public TextMeshProUGUI numberOfPlayersText;
     public Image checkMarkTwinMode; 
         
@@ -23,6 +26,7 @@ public class MenuController : MonoBehaviour
     {
         startPanel.SetActive(false);
         instructionsPanel.SetActive(false);
+        creditsPanel.SetActive(false);
     }
 
     // Update is called once per frame
@@ -50,6 +54,16 @@ public class MenuController : MonoBehaviour
     {
         instructionsPanel.SetActive(false);
     }
+    
+    public void ShowCreditsPanel()
+    {
+        creditsPanel.SetActive(true);
+    }
+    
+    public void HideICreditPanel()
+    {
+        creditsPanel.SetActive(false);
+    }
 
     public void IncreaseNumberOfPlayers()
     {
@@ -66,5 +80,10 @@ public class MenuController : MonoBehaviour
     public void ToggleTwinMode()
     {
         isTwinMode = !isTwinMode;
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(gameScene);
     }
 }

@@ -68,7 +68,7 @@ public class TimeController : MonoBehaviour
             remainingTime = maxTime;
             timerImage.GetComponent<Image>().color = new Color32(90, 230, 104, 255);
             timerImage.fillAmount = 100;
-            //gameHandler.StartRound(); questo va cambiato, deve lanciare il prossimo step del routine handler
+            gameHandler.StartRound(); // questo va cambiato, deve lanciare il prossimo step del routine handler
         }
         IsHand = !IsHand;
     }

@@ -23,6 +23,8 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject Chicken;
     [SerializeField] Sprite scaredChicken;
 
+    [SerializeField] private TimeController timeController;
+
     Animator animator;
 
     //public event Action OutTime; 
@@ -63,6 +65,7 @@ public class Health : MonoBehaviour
     {
 
         // death animation
+        timeController.StopTimer();
         deathSprite.GetComponent<SpriteRenderer>().sortingOrder = 5;
         Chicken.GetComponent<SpriteRenderer>().sprite = scaredChicken;
         animator.SetTrigger("Death");

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using System.Xml.Linq;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,6 +20,7 @@ public class TimeController : MonoBehaviour
 
 
     bool IsHand = false;
+    bool stop = false;
 
     // RICORDARE SE AZIONE ESEGUITE BENE PORTARE TIME A 0
     void Start()
@@ -30,11 +32,13 @@ public class TimeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(remainingTime > 0)
-        { 
+        if (remainingTime > 0)
+        {
             remainingTime -= Time.deltaTime;
             timerImage.fillAmount = remainingTime / maxTime;
             //print(remainingTime / maxTime);
+
+            if (stop) return;
         }
         else
         {
@@ -43,6 +47,9 @@ public class TimeController : MonoBehaviour
             //skip to the next phase
         }
     }
+
+
+    private void timer() {}
 
     public void switchPhase()
     {
@@ -60,8 +67,10 @@ public class TimeController : MonoBehaviour
             remainingTime = maxTime;
             timerImage.GetComponent<Image>().color = new Color32(90, 230, 104, 255);
             timerImage.fillAmount = 100;
-            gameHandler.StartRound();
+            //gameHandler.StartRound(); questo va cambiato, deve lanciare il prossimo step del routine handler
         }
         IsHand = !IsHand;
     }
+
+    public void StopTimer() { stop = true; }
 }

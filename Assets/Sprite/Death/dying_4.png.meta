@@ -5,6 +5,9 @@ TextureImporter:
   - first:
       213: 6359085958194639042
     second: dying_4_0
+  - first:
+      213: 585903743230446738
+    second: dying_4_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,10 +119,10 @@ TextureImporter:
       name: dying_4_0
       rect:
         serializedVersion: 2
-        x: 35
-        y: 39
-        width: 1351
-        height: 759
+        x: 657
+        y: 1353
+        width: 69
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,10 +136,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: dying_4_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1349
+        height: 758
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c82d7a95c812800800000000000000
+      internalID: 585903743230446738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -145,6 +169,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       dying_4_0: 6359085958194639042
+      dying_4_1: 585903743230446738
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

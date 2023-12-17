@@ -13,10 +13,12 @@ public class GameHandler : MonoBehaviour
     [SerializeField] private TimeController timeController;
     [SerializeField] private Health health;
 
-    [SerializeField] private SpriteRenderer faceSprite;
-    [SerializeField] private SpriteRenderer headSprite;
-    [SerializeField] private SpriteRenderer bodySprite;
-    //qualcosa per il movimento
+    [SerializeField] private SpriteRenderer faceSprite; // sprite
+
+    [SerializeField] private SpriteRenderer headSprite; // colore
+    [SerializeField] private SpriteRenderer bodySprite; // colre
+
+    //qualcosa per il movimento   //transform
 
 
     private BabyEvent[] faceEvents;
@@ -34,12 +36,12 @@ public class GameHandler : MonoBehaviour
         faceEvents = eventLists.faceEvents;
         colorEvents = eventLists.colorEvents;
         behaviourEvents = eventLists.behaviourEvents;
-        StartRound();
+        //StartRound();
     }
 
     private void Update()
     {
-        Test();
+        //Test();
     }
 
     private void Test() // Testa una generazione  array random di eventi
@@ -57,7 +59,7 @@ public class GameHandler : MonoBehaviour
     public void StartRound(int eventsQuantity = 1) // fa avviare il round  manuale di eventi in questo caso
     {
         //FOR NOW
-        BabyEvent[] RoundEvents = new[] { new BabyEvent(new Action("DoubleSwipeUp", null), faceState.states.ElementAt(1) ), new BabyEvent(new Action("SingleSwipeRight", null), null) };
+        BabyEvent[] RoundEvents = new[] { new BabyEvent(new Action("DoubleSwipeUp", null), null ), new BabyEvent(new Action("SingleSwipeRight", null), null) };
         //NOT FOR NOW
         //PickEvents(eventsQuantity) number must be defined 
 

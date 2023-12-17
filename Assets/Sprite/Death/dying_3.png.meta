@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: -6280934596789152536
     second: dying_3_2
+  - first:
+      213: 7317915239872543005
+    second: dying_3_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -122,10 +125,10 @@ TextureImporter:
       name: dying_3_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 56
-        width: 1309
-        height: 1104
+        x: 609
+        y: 1364
+        width: 69
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,10 +146,10 @@ TextureImporter:
       name: dying_3_1
       rect:
         serializedVersion: 2
-        x: 735
-        y: 28
-        width: 129
-        height: 49
+        x: 0
+        y: 27
+        width: 1307
+        height: 1104
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,10 +167,10 @@ TextureImporter:
       name: dying_3_2
       rect:
         serializedVersion: 2
-        x: 463
-        y: 29
-        width: 21
-        height: 7
+        x: 651
+        y: 0
+        width: 129
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +184,31 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: dying_3_3
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 0
+        width: 21
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19350183257e8560800000000000000
+      internalID: 7317915239872543005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -195,6 +219,7 @@ TextureImporter:
       dying_3_0: 4006945851093978717
       dying_3_1: -2346161312650626969
       dying_3_2: -6280934596789152536
+      dying_3_3: 7317915239872543005
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

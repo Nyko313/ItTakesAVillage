@@ -127,14 +127,18 @@ public class MotionDetection : MonoBehaviour
     public TextMeshProUGUI tmpro;
     private List<List<float>> data = new List<List<float>>();
     // Start is called before the first frame update
-    public FFTHelper fftHelperX;
-    public FFTHelper fftHelperY;
-    public FFTHelper fftHelperZ;
+    private FFTHelper fftHelperX;
+    private FFTHelper fftHelperY;
+    private FFTHelper fftHelperZ;
     private StreamWriter writer;
     
     public void Start()
     {
-        tmpro.text = "Initializing...";
+        if (tmpro != null)
+        {
+            tmpro.text = "Initializing...";
+        }
+
         fftHelperX = new FFTHelper(fftSize, true);
         fftHelperY = new FFTHelper(fftSize, true);
         fftHelperZ = new FFTHelper(fftSize, true);
@@ -163,7 +167,6 @@ public class MotionDetection : MonoBehaviour
     void Update()
     {
         var acceleration = Accelerometer.current.acceleration.ReadValue();
-
         fftHelperX.insertValue(acceleration.x);
         fftHelperY.insertValue(acceleration.y);
         fftHelperZ.insertValue(acceleration.z);

@@ -23,7 +23,7 @@ namespace DefaultNamespace
             values = new double[size];
             orderedValues = new double[size];
             fft = new double[size];
-            logData = this.logData;
+            this.logData = logData;
         }
         
         public double[] getDataInOrder()
@@ -70,8 +70,8 @@ namespace DefaultNamespace
 
             if (logData)
             {
-                Debug.Log($"{prefix} ContainsValue {containsValue}");
-                Debug.Log($"{prefix} {spectrum.Select(x => x.Real).ToSeparatedString(";")}");
+                // Debug.Log($"{prefix} ContainsValue {containsValue}");
+                // Debug.Log($"{prefix} {spectrum.Select(x => x.Real).ToSeparatedString(";")}");
 
                 string filename = $"./{prefix}_data.csv";
                 if (File.Exists(filename))

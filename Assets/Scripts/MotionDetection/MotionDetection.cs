@@ -21,6 +21,15 @@ public enum MotionDetected
     FLIP_LEFT_RIGHT,
 }
 
+public enum MagnitudeLevel
+{
+    LEVEL0,
+    LEVEL1,
+    LEVEL2,
+    LEVEL3,
+    LEVEL4,
+}
+
 [Serializable]
 public class MovementMapping
 {
@@ -66,11 +75,8 @@ public class MovementParameters
 
 public class MotionDetection : MonoBehaviour
 {
-    public Transform toMoveX;
-    public Transform toMoveY;
-    public Transform toMoveZ;
-    public Transform toMoveMagnitude;
-    public TextMeshProUGUI tmpro;
+    [Header("Configuration Properties")]
+    public int fftSize = 32;
     public float evaluateMovementEveryNSeconds = 2.0f;
     public float keepMovementForSeconds = 1.5f;
 
@@ -81,7 +87,7 @@ public class MotionDetection : MonoBehaviour
             new MovementParameters(10, 1, true),
             new MovementParameters(5, 1, false), 
             new MovementParameters(5, 1, true)
-            ),
+        ),
         new MovementMapping(
             MotionDetected.LEFT_RIGHT,
             new MovementParameters(5, 1, false),
@@ -95,25 +101,43 @@ public class MotionDetection : MonoBehaviour
             new MovementParameters(10, 2, false)
         )
     };
+    [Range(0, 10f)]
+    public float level0Threshold = 0.0f;
+    [Range(0, 10f)]
+    public float level1Threshold = 0.0f;
+    [Range(0, 10f)]
+    public float level2Threshold = 0.0f;
+    [Range(0, 10f)]
+    public float level3Threshold = 0.0f;
     
+    [Header("Values to read for evaluation")]
+    public MotionDetected currentMotion = MotionDetected.INITLIALIZING;
+    public MagnitudeLevel currentMagnitudeLevel = MagnitudeLevel.LEVEL0;
+    public float currentMovementMagnitude = 0.0f;
+    
+    [Header("Debug information")]
+    public float lastFound = 0.0f;
+    public float lastEvaluated = 0.0f;
+    
+    [Header("Game objects for visual debugging, not needed.")]
+    private Transform toMoveX;
+    private Transform toMoveY;
+    private Transform toMoveZ;
+    private Transform toMoveMagnitude;
+    public TextMeshProUGUI tmpro;
     private List<List<float>> data = new List<List<float>>();
     // Start is called before the first frame update
-    private StreamWriter writer;
-
-    public int fftSize = 64;
     public FFTHelper fftHelperX;
     public FFTHelper fftHelperY;
     public FFTHelper fftHelperZ;
-
-    public float lastFound = 0.0f;
-    public float lastEvaluated = 0.0f;
-    public MotionDetected currentMotion = MotionDetected.INITLIALIZING;
+    private StreamWriter writer;
+    
     public void Start()
     {
         tmpro.text = "Initializing...";
-        fftHelperX = new FFTHelper(fftSize);
-        fftHelperY = new FFTHelper(fftSize);
-        fftHelperZ = new FFTHelper(fftSize);
+        fftHelperX = new FFTHelper(fftSize, true);
+        fftHelperY = new FFTHelper(fftSize, true);
+        fftHelperZ = new FFTHelper(fftSize, true);
 
         toMoveX = transform.Find("X");
         toMoveY = transform.Find("Y");
@@ -121,31 +145,47 @@ public class MotionDetection : MonoBehaviour
         toMoveMagnitude = transform.Find("Magnitude");
         
         InputSystem.EnableDevice(Accelerometer.current);
-        InputSystem.EnableDevice(AttitudeSensor.current);
-        InputSystem.EnableDevice(Gyroscope.current);
-        InputSystem.EnableDevice(LinearAccelerationSensor.current);
-        InputSystem.EnableDevice(GravitySensor.current);
+        // InputSystem.EnableDevice(AttitudeSensor.current);
+        // InputSystem.EnableDevice(Gyroscope.current);
+        // InputSystem.EnableDevice(LinearAccelerationSensor.current);
+        // InputSystem.EnableDevice(GravitySensor.current);
     }
     public void StartAcc()
     {
         InputSystem.EnableDevice(Accelerometer.current);
-        InputSystem.EnableDevice(AttitudeSensor.current);
-        InputSystem.EnableDevice(Gyroscope.current);
-        InputSystem.EnableDevice(LinearAccelerationSensor.current);
-        InputSystem.EnableDevice(GravitySensor.current);
+        // InputSystem.EnableDevice(AttitudeSensor.current);
+        // InputSystem.EnableDevice(Gyroscope.current);
+        // InputSystem.EnableDevice(LinearAccelerationSensor.current);
+        // InputSystem.EnableDevice(GravitySensor.current);
     }
     
     // Update is called once per frame
     void Update()
     {
         var acceleration = Accelerometer.current.acceleration.ReadValue();
-        var gyroscope = Gyroscope.current.angularVelocity.ReadValue();
-        var linearAcc = LinearAccelerationSensor.current.acceleration.ReadValue();
 
         fftHelperX.insertValue(acceleration.x);
         fftHelperY.insertValue(acceleration.y);
         fftHelperZ.insertValue(acceleration.z);
 
+        currentMovementMagnitude = acceleration.magnitude;
+
+        if (currentMovementMagnitude > level3Threshold)
+        {
+            currentMagnitudeLevel = MagnitudeLevel.LEVEL4;
+        }
+        if (currentMovementMagnitude < level2Threshold)
+        {
+            currentMagnitudeLevel = MagnitudeLevel.LEVEL2;
+        }
+        if (currentMovementMagnitude < level1Threshold)
+        {
+            currentMagnitudeLevel = MagnitudeLevel.LEVEL1;
+        }
+        if (currentMovementMagnitude < level0Threshold)
+        {
+            currentMagnitudeLevel = MagnitudeLevel.LEVEL0;
+        }
         if (Time.time - evaluateMovementEveryNSeconds > lastEvaluated)
         {
             MotionDetected newState = MotionDetected.NO_MOTION;
@@ -171,9 +211,11 @@ public class MotionDetection : MonoBehaviour
 
                 lastFound = Time.time;
             }
+
+            lastEvaluated = Time.time;
         }
 
-        if (toMoveX != null && toMoveX != null && toMoveX != null)
+        if (toMoveX != null && toMoveX != null && toMoveX != null && toMoveMagnitude != null)
         {
             toMoveX.position = new Vector3(toMoveX.position.x, acceleration.x, toMoveX.position.z);
             toMoveY.position = new Vector3(toMoveY.position.x, acceleration.y, toMoveY.position.z);

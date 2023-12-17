@@ -30,7 +30,7 @@ MonoBehaviour:
     skinColor: {r: 0, g: 0, b: 0, a: 0}
     type: 0
   - stateName: Fear
-    faceSprite: {fileID: -4716443885295417026, guid: d2b4bc5072bac45439654624fc4cc745, type: 3}
+    faceSprite: {fileID: 21300000, guid: e3a8802d03742bd4b8285ef06861a019, type: 3}
     skinColor: {r: 0, g: 0, b: 0, a: 0}
     type: 0
   - stateName: Sadness

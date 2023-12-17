@@ -84,6 +84,7 @@ public class MenuController : MonoBehaviour
 
     public void StartGame()
     {
+        PlayerPrefs.SetInt("numberOfPlayers",numberOfPlayers);
         SceneManager.LoadScene(gameScene);
     }
 }

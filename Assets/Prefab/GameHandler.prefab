@@ -66,6 +66,12 @@ MonoBehaviour:
   inputHandler: {fileID: 5314814995658700847}
   timeController: {fileID: 1502251815630548764}
   health: {fileID: 0}
+  faceSprite: {fileID: 0}
+  headSprite:
+  - {fileID: 0}
+  - {fileID: 0}
+  bodySprite: {fileID: 0}
+  faceState: {fileID: 11400000, guid: ca4a3371e9007425298c0377293a1ff5, type: 2}
 --- !u!114 &2053217076389092141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 0}
-  NormalMaxTime: 10
-  handoverMaxTime: 4
+  NormalMaxTime: 1
+  handoverMaxTime: 1
   timerImage: {fileID: 0}
   gameHandler: {fileID: 8921027553230401541}

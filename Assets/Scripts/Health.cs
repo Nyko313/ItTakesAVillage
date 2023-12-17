@@ -71,7 +71,11 @@ public class Health : MonoBehaviour
         animator.SetTrigger("Death");
         egg.SetActive(false);
         print("death");
-      // end screen
+        // end screen
+
+
     }
 
+
+   
 }

@@ -256,7 +256,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5314814995658700847, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
   m_PrefabInstance: {fileID: 2243709683345518749}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2243709683345518750}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95b7c686a9a3f4242816b1b6773c78e7, type: 3}
@@ -1822,6 +1822,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1502251815630548764, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2053217076389092141, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4647036894350277349, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 616.79315
@@ -1862,6 +1870,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5314814995658700847, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: motionDetection
+      value: 
+      objectReference: {fileID: 2243709683345518751}
+    - target: {fileID: 8921027553230401541, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9133532514878187021, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
       propertyPath: m_Name
       value: GameHandler
@@ -1869,8 +1885,81 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9133532514878187021, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2243709683345518751}
   m_SourcePrefab: {fileID: 100100000, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+--- !u!1 &2243709683345518750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9133532514878187021, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+  m_PrefabInstance: {fileID: 2243709683345518749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2243709683345518751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2243709683345518750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ee6b1f3ea1e74c3f90fa7d7f2803b9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fftSize: 32
+  evaluateMovementEveryNSeconds: 0.7
+  keepMovementForSeconds: 1.5
+  movementMappings:
+  - movement: 2
+    xAxis:
+      threshold: 7
+      count: 1
+      invert: 1
+    yAxis:
+      threshold: 5
+      count: 1
+      invert: 0
+    zAxis:
+      threshold: 5
+      count: 1
+      invert: 1
+  - movement: 3
+    xAxis:
+      threshold: 5
+      count: 1
+      invert: 0
+    yAxis:
+      threshold: 10
+      count: 1
+      invert: 1
+    zAxis:
+      threshold: 5
+      count: 1
+      invert: 1
+  - movement: 4
+    xAxis:
+      threshold: 5
+      count: 1
+      invert: 1
+    yAxis:
+      threshold: 5
+      count: 1
+      invert: 1
+    zAxis:
+      threshold: 10
+      count: 1
+      invert: 0
+  level0Threshold: 0
+  level1Threshold: 0
+  level2Threshold: 0
+  level3Threshold: 0
+  currentMotion: 1
+  currentMagnitudeLevel: 4
+  currentMovementMagnitude: 1.0075655
+  lastFound: 0
+  lastEvaluated: 0
+  tmpro: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

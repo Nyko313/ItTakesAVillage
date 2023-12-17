@@ -7,6 +7,7 @@ using UnityEngine;
 public class InputHandler : MonoBehaviour
 {
     [SerializeField] private GameHandler gameHandler;
+    [SerializeField] private MotionDetection motionDetection;
 
     public enum SwipeDirection
     {
@@ -75,6 +76,8 @@ public class InputHandler : MonoBehaviour
         UpdateAreaClickedTimer(ref bottomRightArea);
         UpdateAreaClickedTimer(ref bottomLeftArea);
         UpdateAreaClickedTimer(ref centerArea);
+
+        CheckMovementDetection();
     }
     
     // ---------- Read Event Action ----------
@@ -83,7 +86,6 @@ public class InputHandler : MonoBehaviour
     {
         eventsToCheck = events;
         eventCompleted = new bool[events.Length];
-
         eventError = new bool[events.Length];
         checkEvents = true;
     }
@@ -98,10 +100,10 @@ public class InputHandler : MonoBehaviour
         }
 
         bool allEventCompleted = true;
-
+        
+        
         foreach (var b in eventCompleted)
         {
-            Debug.Log(b);
             if (b == false)
             {
                 allEventCompleted = false;
@@ -300,21 +302,43 @@ public class InputHandler : MonoBehaviour
             }
         }
     }
+    
+    // ---------- Motion Detection -------------
+
+    private void CheckMovementDetection()
+    {
+        if(!checkEvents) return;
+
+        for (int i = 0; i < eventsToCheck.Length; i++)
+        {
+            if (eventsToCheck[i].action.actionName.Contains("Swing"))
+            {
+                if (eventsToCheck[i].action.actionName.Contains("Vertically") && motionDetection.currentMotion == MotionDetected.UP_DOWN)
+                {
+                    
+                }else if (eventsToCheck[i].action.actionName.Contains("Horizontally") && motionDetection.currentMotion == MotionDetected.LEFT_RIGHT)
+                {
+                    
+                }else if (eventsToCheck[i].action.actionName.Contains("Front") && motionDetection.currentMotion == MotionDetected.BACK_FRONT)
+                {
+                    
+                }
+                else
+                {
+                    eventError[i] = true;
+                }
+            }
+            else
+            {
+                eventError[i] = true;
+            }
+        }
+        
+        
+    }
 
     private void  OnGUI()
     {
-        int space = 55;
-        int debugTextSize = 50;
-        GUIStyle debugTextStyle = new GUIStyle();
-        debugTextStyle.fontSize = 70;
-        
-        
-        GUI.Label(new Rect(50, 80 + space * 0, debugTextSize, debugTextSize), "touchCount: " + Input.touchCount.ToString(), debugTextStyle);
-        GUI.Label(new Rect(50, 80 + space * 1, debugTextSize, debugTextSize), "swipeDirection: " + swipeDirection.ToString(), debugTextStyle);
-        GUI.Label(new Rect(50, 80 + space * 2, debugTextSize, debugTextSize), "centerArea: " + centerArea.areaState.ToString(), debugTextStyle);
-        GUI.Label(new Rect(50, 80 + space * 3, debugTextSize, debugTextSize), "bottomLeftArea: " + bottomLeftArea.areaState.ToString(), debugTextStyle);
-        GUI.Label(new Rect(50, 80 + space * 4, debugTextSize, debugTextSize), "bottomRightArea: " + bottomRightArea.areaState.ToString(), debugTextStyle);
-
         GUI.color = new Color(0,0,0,0);
         if (GUI.Button(new Rect(0, Screen.height * 0.25f, Screen.width, Screen.height * 0.5f), ""))
         {
@@ -330,6 +354,28 @@ public class InputHandler : MonoBehaviour
         }
         
         GUI.color = Color.white;
+        
+        // Remove for Debugging
+        //return;
+        int space = 50;
+        int debugTextSize = 50;
+        GUIStyle debugTextStyle = new GUIStyle();
+        debugTextStyle.fontSize = 50;
+        
+        
+        GUI.Label(new Rect(10, 80 + space * 0, debugTextSize, debugTextSize), "touchCount: " + Input.touchCount.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 1, debugTextSize, debugTextSize), "swipeDirection: " + swipeDirection.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 2, debugTextSize, debugTextSize), "centerArea: " + centerArea.areaState.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 3, debugTextSize, debugTextSize), "bottomLeftArea: " + bottomLeftArea.areaState.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 4, debugTextSize, debugTextSize), "bottomRightArea: " + bottomRightArea.areaState.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 5, debugTextSize, debugTextSize), "motion: " + motionDetection.currentMotion.ToString(), debugTextStyle);
+        GUI.Label(new Rect(10, 80 + space * 6, debugTextSize, debugTextSize), "motionMagnitude: " + motionDetection.currentMagnitudeLevel.ToString(), debugTextStyle);
+        
+
+        for(int i = 0; i < eventCompleted.Length; i++)
+        {
+            GUI.Label(new Rect(10, 80 + space * (7 + i), debugTextSize, debugTextSize), "event " + i +": " + eventCompleted[i] + " : " + eventsToCheck[i].action.actionName, debugTextStyle);
+        }
     }
 
 }

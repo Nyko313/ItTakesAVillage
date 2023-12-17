@@ -14,14 +14,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   states:
   - stateName: Lightblue
-    stateTexture: {fileID: 0}
+    faceSprite: {fileID: 0}
+    skinColor: {r: 0.6117647, g: 0.6313726, b: 0.972549, a: 1}
+    type: 1
   - stateName: Darkblue
-    stateTexture: {fileID: 0}
+    faceSprite: {fileID: 0}
+    skinColor: {r: 0.30980393, g: 0.32156864, b: 0.5019608, a: 1}
+    type: 1
   - stateName: Orange
-    stateTexture: {fileID: 0}
+    faceSprite: {fileID: 0}
+    skinColor: {r: 1, g: 0.5372549, b: 0.2509804, a: 1}
+    type: 1
   - stateName: Brown
-    stateTexture: {fileID: 0}
+    faceSprite: {fileID: 0}
+    skinColor: {r: 0.76862746, g: 0.4, b: 0.3882353, a: 1}
+    type: 1
   - stateName: Purple
-    stateTexture: {fileID: 0}
+    faceSprite: {fileID: 0}
+    skinColor: {r: 0.6392157, g: 0.16862746, b: 0.75686276, a: 1}
+    type: 1
   - stateName: Red
-    stateTexture: {fileID: 0}
+    faceSprite: {fileID: 0}
+    skinColor: {r: 0.6392157, g: 0.16862746, b: 0.75686276, a: 1}
+    type: 1

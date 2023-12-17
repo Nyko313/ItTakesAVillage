@@ -121,6 +121,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -128,9 +141,9 @@ TextureImporter:
       name: confusion_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 40
-        width: 479
+        x: 9
+        y: 83
+        width: 480
         height: 330
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -149,10 +162,10 @@ TextureImporter:
       name: confusion_1
       rect:
         serializedVersion: 2
-        x: 287
-        y: 347
+        x: 297
+        y: 390
         width: 156
-        height: 86
+        height: 87
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,9 +183,9 @@ TextureImporter:
       name: confusion_2
       rect:
         serializedVersion: 2
-        x: 504
-        y: 31
-        width: 457
+        x: 514
+        y: 74
+        width: 458
         height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -191,8 +204,8 @@ TextureImporter:
       name: confusion_3
       rect:
         serializedVersion: 2
-        x: 510
-        y: 333
+        x: 520
+        y: 376
         width: 133
         height: 94
       alignment: 0
@@ -212,10 +225,10 @@ TextureImporter:
       name: confusion_4
       rect:
         serializedVersion: 2
-        x: 430
-        y: 0
+        x: 440
+        y: 42
         width: 121
-        height: 84
+        height: 85
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

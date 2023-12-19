@@ -58,6 +58,11 @@ public class InputHandler : MonoBehaviour
     private Area bottomRightArea;
     private float doubleClickTime = 0.3f;
 
+    // For the button
+    [SerializeField] Animator chickAnimator;
+    [SerializeField] Animator eggAnimator;
+    [SerializeField] Animator deathAnimator;
+
     private void Start()
     {
         centerArea = new Area();
@@ -100,8 +105,10 @@ public class InputHandler : MonoBehaviour
         }
 
         bool allEventCompleted = true;
-        
-        
+
+        // succes animation
+        deathAnimator.SetTrigger("Succes");
+
         foreach (var b in eventCompleted)
         {
             if (b == false)
@@ -128,17 +135,19 @@ public class InputHandler : MonoBehaviour
     public void BottomLeftBtnPressed()
     {
         UpdateAreaState(ref bottomLeftArea);
+        chickAnimator.SetTrigger("Left");
     }
     
     public void BottomRightBtnPressed(){
         UpdateAreaState(ref bottomRightArea);
-        
+        chickAnimator.SetTrigger("Right");
     }
     
     public void CenterBtnPressed()
     {
         UpdateAreaState(ref centerArea);
-        
+        eggAnimator.SetTrigger("Center");
+
     }
 
     private void UpdateAreaState(ref Area area)

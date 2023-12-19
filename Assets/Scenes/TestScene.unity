@@ -256,6 +256,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274319733}
   - component: {fileID: 274319732}
+  - component: {fileID: 274319734}
   m_Layer: 0
   m_Name: Chicken
   m_TagString: Untagged
@@ -332,6 +333,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &274319734
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274319731}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c8b327958e0a7948aedc28e8607fd18, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &341110173 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7506192286230940700, guid: be824a0b752cae342a94a2a9a904b3f1, type: 3}
@@ -570,11 +593,11 @@ PrefabInstance:
       objectReference: {fileID: 341110173}
     - target: {fileID: 1502251815630548764, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
       propertyPath: NormalMaxTime
-      value: 15
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1502251815630548764, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
       propertyPath: handoverMaxTime
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2053217076389092141, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
       propertyPath: m_Enabled
@@ -624,6 +647,18 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5314814995658700847, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: eggAnimator
+      value: 
+      objectReference: {fileID: 1078395631}
+    - target: {fileID: 5314814995658700847, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: chickAnimator
+      value: 
+      objectReference: {fileID: 274319734}
+    - target: {fileID: 5314814995658700847, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
+      propertyPath: deathAnimator
+      value: 
+      objectReference: {fileID: 1836166027}
     - target: {fileID: 5314814995658700847, guid: ee88cd08c084abf4f9cfbcb770e588bc, type: 3}
       propertyPath: motionDetection
       value: 
@@ -1147,6 +1182,11 @@ SpriteRenderer:
 --- !u!4 &1836166026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8980085616022214629, guid: 3f5ecbe829715ba4690d14bf06fd7545, type: 3}
+  m_PrefabInstance: {fileID: 3169682163076980009}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1836166027 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8270374676549665329, guid: 3f5ecbe829715ba4690d14bf06fd7545, type: 3}
   m_PrefabInstance: {fileID: 3169682163076980009}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1848402759
@@ -1780,6 +1820,22 @@ PrefabInstance:
     - target: {fileID: 7670262853561382541, guid: 3f5ecbe829715ba4690d14bf06fd7545, type: 3}
       propertyPath: m_Name
       value: Death
+      objectReference: {fileID: 0}
+    - target: {fileID: 8136747428171373090, guid: 3f5ecbe829715ba4690d14bf06fd7545, type: 3}
+      propertyPath: m_Size.x
+      value: 14.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8136747428171373090, guid: 3f5ecbe829715ba4690d14bf06fd7545, type: 3}
+      propertyPath: m_Size.y
+      value: 23.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8136747428171373090, guid: 3f5ecbe829715ba4690d14bf06fd7545, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8136747428171373090, guid: 3f5ecbe829715ba4690d14bf06fd7545, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8980085616022214629, guid: 3f5ecbe829715ba4690d14bf06fd7545, type: 3}
       propertyPath: m_LocalPosition.x

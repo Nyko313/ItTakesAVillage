@@ -168,7 +168,7 @@ public class InputHandler : MonoBehaviour
     {
         if (area.areaState != AreaState.None && Time.time - area.lastTimeClicked > doubleClickTime)
         {
-            Debug.Log("Diomerdaccia");
+            Debug.Log("Caspiterina");
             
             if(checkEvents) AreaPressedCheck(area);
             

@@ -30,11 +30,21 @@ public class EventsGenerator : MonoBehaviour
     }
     public BabyEventLists GenerateEvent()
     {
+        int playerNumber = PlayerPrefs.GetInt("numberOfPlayers");
+        int numberOfAction;
+        if (playerNumber < 4)
+        {
+            numberOfAction = 2;
+        }
+        else
+        {
+            numberOfAction = 3;
+        }
         System.Random rand = new System.Random();
         // TODO: Change array size with playerNumber/3
-        BabyEvent[] faceEvents = new BabyEvent[3];
-        BabyEvent[] colorEvents = new BabyEvent[3];
-        BabyEvent[] behaviourEvents = new BabyEvent[3];
+        BabyEvent[] faceEvents = new BabyEvent[numberOfAction];
+        BabyEvent[] colorEvents = new BabyEvent[numberOfAction];
+        BabyEvent[] behaviourEvents = new BabyEvent[numberOfAction];
 
         List<State> faceS = new();
         faceS.AddRange(faceState.states);

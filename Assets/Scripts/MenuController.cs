@@ -16,7 +16,7 @@ public class MenuController : MonoBehaviour
     public Image checkMarkTwinMode; 
         
     [Header("Configuration, UI starts with that")]
-    public int maxNumberOfPlayers = 5;
+    public int maxNumberOfPlayers = 6;
     public int minNumberOfPlayers = 2;
     [Header("User Settable")]
     public int numberOfPlayers = 3;

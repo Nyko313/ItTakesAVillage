@@ -17,7 +17,8 @@ public class GameHandler : MonoBehaviour
     [SerializeField] private SpriteRenderer faceSprite;
     [SerializeField] private SpriteRenderer[] headSprite;
     [SerializeField] private SpriteRenderer bodySprite;
-    
+    [SerializeField] private SpriteRenderer chicken;
+
     [SerializeField] private SpriteRenderer tutorialIconSprite;
     [SerializeField] private GameObject tutorialBaloonSprite;
     [SerializeField] private GameObject tutorialTouchCenterSprite;
@@ -25,6 +26,7 @@ public class GameHandler : MonoBehaviour
     [SerializeField] private GameObject tutorialTouchLeftSprite;
 
     private Sprite defaultFace;
+    private Sprite defaultChick;
     private Color defaultColor;
     
     //qualcosa per il movimento
@@ -63,6 +65,7 @@ public class GameHandler : MonoBehaviour
         
         defaultColor = headSprite[0].color;
         defaultFace = faceSprite.sprite;
+        defaultChick = chicken.sprite;
         StartRound();
     }
 
@@ -83,7 +86,7 @@ public class GameHandler : MonoBehaviour
     }
 
     //questo da collegarea la routine/level handler
-    public void StartRound(int eventsQuantity = 1) // fa avviare il round  manuale di eventi in questo caso
+    public void StartRound(int eventsQuantity = 1) // fa avviare il round 
     {
         
         //roundEvents = new[] { new BabyEvent(new Action("DoubleSwipeUp", null), faceState.states.ElementAt(1) ), new BabyEvent(new Action("SingleSwipeRight", null), null) };
@@ -98,7 +101,7 @@ public class GameHandler : MonoBehaviour
         else
         {
             tutorialRound = false;
-            roundEvents = PickEvents(2);
+            roundEvents = PickEvents(PlayerPrefs.GetInt("numberOfPlayer") == 2 ? 2: 1);
         }
         
         //NOT FOR NOW
@@ -131,7 +134,7 @@ public class GameHandler : MonoBehaviour
         }
     }
 
-    private void HideTutorialIcons()
+    public void HideTutorialIcons()
     {
         tutorialBaloonSprite.SetActive(false);
         tutorialTouchCenterSprite.SetActive(false);
@@ -139,13 +142,14 @@ public class GameHandler : MonoBehaviour
         tutorialTouchRightSprite.SetActive(false);
     }
 
-    private void FinishRound()
+    public void FinishRound() //activated at the and of handover phase
     {
         HideTutorialIcons();
         faceSprite.sprite = defaultFace;
+        chicken.sprite = defaultChick;
         headSprite[0].color = defaultColor;
         headSprite[1].color = defaultColor;
-        animator.SetBool(curAnime, false);
+        animator.SetBool(curAnime, false); 
     }
     
     private void StateInitializer()
@@ -163,7 +167,6 @@ public class GameHandler : MonoBehaviour
                     headSprite[1].color = ev.state.skinColor;
                     break;
                 case State.Type.Behaviour:
-                    // TODO: Add Behaviour
                     animator.SetBool(ev.state.stateName, true);
                     curAnime = ev.state.stateName;
                     break;
@@ -177,15 +180,16 @@ public class GameHandler : MonoBehaviour
     {
         inputHandler.StopCheckEvents(); 
         Debug.Log("Time Finished");
-        FinishRound();
+        //FinishRound();
     }
 
     public void WrongAction()
     {
+        ShowTutorialIcons();
         health.takeDamage();
         timeController.switchPhase();
         Debug.Log("Wrong action");
-        FinishRound();
+        //FinishRound();
     }
 
     public void AllActionDone()
@@ -193,7 +197,7 @@ public class GameHandler : MonoBehaviour
         //RUN HAPPY ANIMATION gold border plus happy face
         timeController.switchPhase();
         Debug.Log("All Action Done");
-        FinishRound();
+        //FinishRound();
     }
 
     //------------- Set Up actions ----------
@@ -212,7 +216,7 @@ public class GameHandler : MonoBehaviour
 
         for (int i = 0; i < ret.Length; i++)
         {
-            switch (i)
+            switch (rand.Next(3))
             {
                 case 0:
                     ret[i] = faceEv[rand.Next(faceEv.Count)];

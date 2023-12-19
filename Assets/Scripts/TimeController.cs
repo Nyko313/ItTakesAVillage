@@ -14,6 +14,7 @@ public class TimeController : MonoBehaviour
     [SerializeField] float handoverMaxTime = 10f;
     private float maxTime;
     public Image timerImage;
+    float speed;
 
     //------ MERGING ---
     [SerializeField] private GameHandler gameHandler;
@@ -33,6 +34,13 @@ public class TimeController : MonoBehaviour
     void Update()
     {
         if (!stop) timer();
+
+        
+    }
+
+    private void FixedUpdate()
+    {
+        speed += 0.001f;
     }
 
 
@@ -40,7 +48,7 @@ public class TimeController : MonoBehaviour
     {
         if (remainingTime > 0)
         {
-            remainingTime -= Time.deltaTime;
+            remainingTime -= Time.deltaTime * speed;
             timerImage.fillAmount = remainingTime / maxTime;
             //print(remainingTime / maxTime);
         }
@@ -64,6 +72,7 @@ public class TimeController : MonoBehaviour
         }
         else // return to normal game
         {
+            gameHandler.FinishRound();
             maxTime = NormalMaxTime;
             remainingTime = maxTime;
             timerImage.GetComponent<Image>().color = new Color32(90, 230, 104, 255);

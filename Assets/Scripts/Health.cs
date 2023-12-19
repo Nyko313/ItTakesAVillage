@@ -7,6 +7,13 @@ public class Health : MonoBehaviour
 {
 
     [SerializeField] GameObject egg;
+    [SerializeField] GameObject expression;
+    [SerializeField] GameObject Chicken;
+    [SerializeField] Sprite scaredChicken;
+    [SerializeField] Sprite disappointedChicken;
+    [SerializeField] Sprite disappointedEgg;
+
+
     [SerializeField] Transform deathSprite;
     [SerializeField] private int maxHealth;
     private int currentHealth;
@@ -20,10 +27,9 @@ public class Health : MonoBehaviour
     [SerializeField] List<Sprite> crackHeadSprites = new List<Sprite>();
     [SerializeField] List<Sprite> crackBodySprites = new List<Sprite>();
 
-    [SerializeField] GameObject Chicken;
-    [SerializeField] Sprite scaredChicken;
-
     [SerializeField] private TimeController timeController;
+
+    [SerializeField] private GameHandler gameHandler;
 
     Animator animator;
 
@@ -44,6 +50,17 @@ public class Health : MonoBehaviour
      public void takeDamage() { 
         currentHealth -= 1;
 
+        // animation
+        animator.SetTrigger("Damage");
+
+        //change expression
+
+        Chicken.GetComponent<SpriteRenderer>().sprite = disappointedChicken;
+        expression.GetComponent<SpriteRenderer>().sprite = disappointedEgg; // va resettato in handler face 
+
+        //show again what was right
+
+
         if (currentHealth <= 0) {
             death();
             return;
@@ -52,8 +69,7 @@ public class Health : MonoBehaviour
         // change dmg level
         if (currentHealth% stepHealt == 0 && currentStep < STEPS-1)
         {
-            // animation
-            animator.SetTrigger("Damage");
+
             headSpriteR.sprite = crackHeadSprites[currentStep];
             bodySpriteR.sprite = crackBodySprites[currentStep];
 
@@ -65,6 +81,7 @@ public class Health : MonoBehaviour
     {
 
         // death animation
+        gameHandler.HideTutorialIcons();
         timeController.StopTimer();
         deathSprite.GetComponent<SpriteRenderer>().sortingOrder = 5;
         Chicken.GetComponent<SpriteRenderer>().sprite = scaredChicken;
